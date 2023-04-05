@@ -1,34 +1,18 @@
 {
   "name": "personal-portfolio",
-  "version": "1.0.0",
-  "description": "1. Show Experience 2. Projects 3. Contact form",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "npx next build",
-    "start": "npx next start",
-    "lint": "npx next lint",
-    "dev": "npx next dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "sudo rm -rf .next && sudo rm -rf node_modules"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/elroychua/personal-portfolio.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/elroychua/personal-portfolio/issues"
-  },
-  "homepage": "https://github.com/elroychua/personal-portfolio#readme",
-  "devDependencies": {
-    "react": "^18.2.0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/material": "^5.11.7",
-    "next": "^13.1.6",
-    "react-dom": "^18.2.0"
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
