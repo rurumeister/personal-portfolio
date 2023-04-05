@@ -4,8 +4,8 @@ import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import Image from "next/image";
 import elroy from "../public/elroy_ai.png";
 import design from "../public/design.png";
-import code from "../public/code.png";
-import web1 from "../public/web1.png";
+import backend from "../public/backend.png";
+import frontend from "../public/frontend.png";
 export default function Home() {
   return (
     <>
@@ -15,11 +15,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/elroy_icon.png" />
       </Head>
-      <nav className="sticky py-10 mb-12 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-white shadow-md z-50">
-        <h1 className="text-xl">
-          {`//elroychua`}
-          <span className="text-teal-600">_</span>
-        </h1>
+      <nav className="sticky py-10 mb-12 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-white shadow-md z-50 cursor-pointer">
+        <div
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
+          <h1 className="text-xl">
+            {`//elroychua`}
+            <span className="text-teal-600">_</span>
+          </h1>
+        </div>
         <ul className="flex items-center">
           <li>
             <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
@@ -36,12 +45,12 @@ export default function Home() {
       </nav>
       <main className=" bg-white px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <div className="text-center p-10">
+          <div className="text-center">
             <h2 className="text-5xl py-2 text-teal-600 font-medium">
               Elroy Chua
             </h2>
             <h3 className="text-2xl py-2">
-              Full Stack Developer and CS student.
+              Full Stack Developer and CS Student.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800">
               {`I have a strong interest in user experience and project
@@ -70,18 +79,33 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="mt-20">
-            <h3 className="text-3xl py-1">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-80">
-              Since the beginning of my journey as a developer, I have been an
-              intern for <span className="text-teal-500">GetPaidSG</span>
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-80">
-              I offer wide range of services from the frontend to the backend
-              programming.
+          <div>
+            <h3 className="text-3xl py-1">About Me</h3>
+            <p className="text-md py-2 leading-8 text-gray-500">
+              {`My experience in Spatial Design at `}
+              <span className="font-bold">Nanyang Polytechnic</span>
+              {` provided me with design thinking,
+              knowledge of architectural technologies, and UX design concepts. This sparked my interest in UI/UX,
+              programming concepts, and web applications. Although a high bar to entry, pursuing a Computer Science major at the `}
+              <span className="font-bold">University of Wollongong</span>
+              {` has been a fulfilling learning journey. I actively participate
+              in hackathons, interest groups, and completed a Software Engineering cum Full-Stack
+              developer internship at `}
+              <span
+                className="text-teal-500 hover:text-amber-300 cursor-pointer"
+                onClick={() => {
+                  const element = document.getElementById("project-top");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                GetPaidSG
+              </span>
+              {`.`}
             </p>
           </div>
-          <div>
+          <div className="grid lg:grid-cols-3 gap-4">
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image
                 alt="design-image"
@@ -92,18 +116,19 @@ export default function Home() {
               />
               <h3 className="text-lg font-medium pt-8 pb-2">UX Designer</h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs according to
-                design theory.
+                Crafting elegant designs to meet your needs through design
+                theory and stakeholder input.
               </p>
               <h4 className="py-4 text-teal-600">Design tools I use</h4>
               <p className="text-gray-600 py-1">Adobe XD</p>
+              <p className="text-gray-600 py-1">Miro</p>
               <p className="text-gray-600 py-1">Figma</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image
                 alt="design-image"
                 class="mx-auto"
-                src={code}
+                src={frontend}
                 width="100"
                 height="100"
               />
@@ -118,31 +143,45 @@ export default function Home() {
               <p className="text-gray-600 py-1">ReactJS</p>
               <p className="text-gray-600 py-1">NextJS</p>
               <p className="text-gray-600 py-1">NodeJS</p>
-              <p className="text-gray-600 py-1">JavaScript</p>
-              <p className="text-gray-600 py-1">HTML</p>
-              <p className="text-gray-600 py-1">CSS</p>
+              <p className="text-gray-600 py-1">JavaScript, HTML, CSS</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image
+                alt="design-image"
+                class="mx-auto"
+                src={backend}
+                width="100"
+                height="100"
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Back-end Developer
+              </h3>
+              <p className="py-2">
+                Designing, implementing and maintainings user interface of
+                websites and applications.
+              </p>
+              <h4 className="py-4 text-teal-600">Languages used</h4>
+              <p className="text-gray-600 py-1">ExpressJS</p>
+              <p className="text-gray-600 py-1">PostgreSQL</p>
+              <p className="text-gray-600 py-1">MongoDB</p>
+              <p className="text-gray-600 py-1">Java, Python, C++</p>
             </div>
           </div>
         </section>
         <section>
           <div>
+            <h3 className="text-3xl py-1">Experience</h3>
+            <p className="py-2"></p>
+          </div>
+          <div></div>
+        </section>
+        <section>
+          <div id="project-top" className=" h-32"></div>
+          <div className="min-h-screen">
             <h3 className="text-3xl py-1">Projects</h3>
-            <p className="py-2">
-              {`Since the beginning of my journey as a developer, I've done freelance work for agencies
-            and development for startups.`}
-            </p>
+            <p className="py-2"></p>
           </div>
-          <div>
-            {/* <div>
-              <Image src={web1} alt="appetizer-hackathon" />
-            </div>
-            <div>
-              <Image src={web1} alt="appetizer-hackathon" />
-            </div>
-            <div>
-              <Image src={web1} alt="appetizer-hackathon" />
-            </div> */}
-          </div>
+          <div></div>
         </section>
       </main>
     </>
