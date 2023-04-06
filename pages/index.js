@@ -134,7 +134,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
+          <div className=" mt-10">
             <h3 className="text-3xl py-1">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-500">
               {`My experience in Spatial Design at `}
