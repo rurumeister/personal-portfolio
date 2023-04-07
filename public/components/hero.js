@@ -11,7 +11,7 @@ const Hero = () => {
               management, enthusiastic about utilizing new technologies to drive
               positive change and solve problems. I am a committed team player with
               a strong empathetic ability and am dedicated to contributing to
-              the success of the company. Let's connect!`}
+              the success of future projects. Let's connect!`}
         </p>
       </div>
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">

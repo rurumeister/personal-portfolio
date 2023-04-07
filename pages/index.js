@@ -3,6 +3,15 @@ import Navbar from "../public/components/navbar";
 import Hero from "../public/components/hero";
 import AboutMe from "../public/components/aboutMe";
 import WorkExperience from "../public/components/workExp";
+import Projects from "../public/components/projects";
+import ProjectCarousel from "../public/components/projectCarousel";
+import * as React from "react";
+
+function isMatch(media) {
+  const query = `(min-width: ${sizes[media]})`;
+  return window.matchMedia(query).matches;
+}
+
 export default function Home() {
   return (
     <>
@@ -13,18 +22,14 @@ export default function Home() {
         <link rel="icon" href="/elroy_icon.png" />
       </Head>
       <Navbar />
-      <main className=" bg-white px-10 md:px-20 lg:px-40">
-        <Hero />
-        <AboutMe />
-        <WorkExperience />
-        <section>
-          <div className=" h-32"></div>
-          <div>
-            <h3 className="text-3xl py-1">Projects</h3>
-            <p className="py-2"></p>
-          </div>
-          <div></div>
+      <main>
+        <section className=" bg-white px-10 md:px-20 lg:px-40">
+          <Hero />
+          <AboutMe />
+          <WorkExperience />
+          <Projects />
         </section>
+        <ProjectCarousel />
       </main>
     </>
   );

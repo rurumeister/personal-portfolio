@@ -5,7 +5,7 @@ const AboutMe = () => {
     <section>
       <div className=" mt-10">
         <h3 className="text-3xl py-1">About Me</h3>
-        <p className="text-md py-2 leading-8 text-gray-500">
+        <p className="text-md py-2 leading-8 text-gray-800">
           {`My experience in Spatial Design at `}
           <span className="font-bold">Nanyang Polytechnic</span>
           {` provided me with design thinking,
@@ -13,7 +13,7 @@ const AboutMe = () => {
               programming concepts, and web applications. Although a high bar to entry, pursuing a Computer Science major at the `}
           <span className="font-bold">University of Wollongong</span>
           {` has been a fulfilling learning journey. I actively participate
-              in hackathons, interest groups, and completed a Software Engineering cum Full-Stack
+              in hackathons, interest groups, and am completing a Software Engineering cum Full-Stack
               developer internship at `}
           <span
             className="text-teal-500 hover:text-amber-300 cursor-pointer"
