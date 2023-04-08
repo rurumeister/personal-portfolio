@@ -3,6 +3,7 @@ import Navbar from "../public/components/navbar";
 import * as React from "react";
 import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
+import useMediaQuery from "@mui/material/useMediaQuery";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function Resume() {
@@ -18,7 +19,7 @@ export default function Resume() {
     borderRadius: "5px",
     padding: "10px",
   };
-
+  const isInitialRequestGreaterThan700 = useMediaQuery("(min-width:700px)");
   return (
     <>
       <Head>
@@ -30,17 +31,31 @@ export default function Resume() {
       <Navbar />
       <main>
         <section className=" bg-white px-10 md:px-20 lg:px-40">
-          <div className="text-center">
+          <div
+            className="text-center"
+            style={{ maxWidth: "100%", width: "100%" }}
+            options={{ workerSrc: "/pdf.worker.js" }}
+          >
             <Document
               file="ElroyChuaResume.pdf"
               onLoadSuccess={onDocumentLoadSuccess}
               canvasWrapperStyle={canvasWrapperStyle}
             >
-              <Page
-                pageNumber={pageNumber}
-                renderAnnotationLayer={false}
-                renderTextLayer={false}
-              />
+              {isInitialRequestGreaterThan700 ? (
+                <Page
+                  pageNumber={pageNumber}
+                  renderAnnotationLayer={false}
+                  renderTextLayer={false}
+                  width="600"
+                />
+              ) : (
+                <Page
+                  pageNumber={pageNumber}
+                  renderAnnotationLayer={false}
+                  renderTextLayer={false}
+                  width="300"
+                />
+              )}
             </Document>
             <p>
               Page {pageNumber} of {numPages}
