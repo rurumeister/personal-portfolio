@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <main>
-        <section className=" bg-white px-10 md:px-20 lg:px-40">
+        <section className=" bg-white pt-12 px-10 md:px-20 lg:px-40">
           <Hero />
           <AboutMe />
           <WorkExperience />

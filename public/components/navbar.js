@@ -1,17 +1,19 @@
 import Link from "next/link";
+import { React, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
 const navbar = () => {
   return (
-    <nav className="sticky py-10 mb-12 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-white shadow-md z-50 cursor-pointer">
-      <Link href="/">
-        <div>
+    <nav className="sticky py-10 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-white shadow-md z-50 cursor-pointer">
+      <div className="flex justify-items-center">
+        <Link href="/">
           <h1 className="text-xl">
             {`//elroychua`}
             <span className="text-teal-600">_</span>
           </h1>
-        </div>
-      </Link>
+        </Link>
+      </div>
+
       <ul className="flex items-center">
         <li>
           <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
