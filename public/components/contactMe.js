@@ -40,8 +40,8 @@ const Form = () => {
           {contactLinks.map((link) => {
             return (
               <>
-                <div className="text-center cursor-pointer hover:text-teal-400">
-                  <div className="flex justify-center">
+                <div className=" w-10 self-center text-center cursor-pointer hover:text-teal-400">
+                  <div className="flex justify-center ">
                     <a
                       href={link.link}
                       className="justify-items-center"

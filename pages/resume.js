@@ -28,7 +28,7 @@ export default function Resume() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/elroy_icon.png" />
       </Head>
-      <Navbar />
+      <Navbar activePage="resume" />
       <main>
         <section className=" bg-white px-10 md:px-20 lg:px-40">
           <div

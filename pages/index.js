@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/elroy_icon.png" />
       </Head>
-      <Navbar />
+      <Navbar activePage="home" />
       <main>
         <section className=" bg-white pt-12 px-10 md:px-20 lg:px-40">
           <Hero />
