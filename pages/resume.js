@@ -1,11 +1,12 @@
 import Head from "next/head";
-import Navbar from "../public/components/navbar";
-import * as React from "react";
 import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import useMediaQuery from "@mui/material/useMediaQuery";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
+//component imports
+import Navbar from "../public/components/navbar";
+import ContactMe from "../public/components/contactMe";
+import Footer from "../public/components/footer";
 export default function Resume() {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -30,14 +31,15 @@ export default function Resume() {
       </Head>
       <Navbar activePage="resume" />
       <main>
-        <section className=" bg-white px-10 md:px-20 lg:px-40">
+        <section className=" bg-white pt-12 px-10 md:px-20 lg:px-40">
           <div
             className="text-center"
             style={{ maxWidth: "100%", width: "100%" }}
             options={{ workerSrc: "/pdf.worker.js" }}
           >
+            <h2 className="text-5xl py-2 text-teal-600 font-medium">Resume</h2>
             <Document
-              file="ElroyChuaResume.pdf"
+              file="ElroyChuaResume.pdf "
               onLoadSuccess={onDocumentLoadSuccess}
               canvasWrapperStyle={canvasWrapperStyle}
             >
@@ -61,6 +63,8 @@ export default function Resume() {
               Page {pageNumber} of {numPages}
             </p>
           </div>
+          <ContactMe />
+          <Footer />
         </section>
       </main>
     </>

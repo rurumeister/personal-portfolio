@@ -11,13 +11,8 @@ const ProjectCarousel = dynamic(
   { ssr: false }
 );
 import ContactMe from "../public/components/contactMe";
-
+import Footer from "../public/components/footer";
 import * as React from "react";
-
-function isMatch(media) {
-  const query = `(min-width: ${sizes[media]})`;
-  return window.matchMedia(query).matches;
-}
 
 export default function Home() {
   return (
@@ -41,13 +36,7 @@ export default function Home() {
         </section>
         <section className=" bg-white px-10 md:px-20 lg:px-40 ">
           <ContactMe />
-          <div className="flex flex-row mt-16 mb-5 place-content-center">
-            <p className="text-center  text-gray-400 text-xs mr-1">
-              Created by Elroy Chua Ming Xuan
-            </p>
-            <RiCopyrightFill className="text-gray-400" />
-            <p className="text-center  text-gray-400 text-xs ml-1">2023</p>
-          </div>
+          <Footer />
         </section>
       </main>
     </>

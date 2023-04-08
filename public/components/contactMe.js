@@ -1,4 +1,9 @@
-import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillInstagram,
+  AiOutlineInfoCircle,
+} from "react-icons/ai";
 import { React, useState } from "react";
 import { MdEmail } from "react-icons/md";
 const Form = () => {
@@ -21,18 +26,25 @@ const Form = () => {
       icon: <AiFillInstagram />,
       subtitle: "Instagram",
     },
-    {
-      id: 4,
-      link: "https://github.com/elroychua",
-      icon: <MdEmail />,
-      subtitle: "Email",
-    },
   ];
+  const [showNotification, setShowNotification] = useState(false);
+  function handleEmailCopyClick() {
+    navigator.clipboard
+      .writeText("elroymx@gmail.com")
+      .then(() => {
+        setShowNotification(true);
+        setTimeout(() => {
+          setShowNotification(false);
+        }, 5000);
+      })
+      .catch((error) => {
+        console.error("Failed to copy: ", error);
+      });
+  }
   return (
     <section>
-      <div className=" mt-8">
-        <h3 className="text-3xl py-1">Contact Me!</h3>
-        <p className="text-md py-2 leading-8 text-gray-800">
+      <div className=" mt-8 relative" id="social-links">
+        <p className="text-md py-2 leading-8 text-gray-800 text-center">
           {`I'm constantly seeking new prospects and ways to broaden my professional connections.
           Don't hesitate to reach out to me through any of these channels.`}
         </p>
@@ -40,7 +52,10 @@ const Form = () => {
           {contactLinks.map((link) => {
             return (
               <>
-                <div className=" w-10 self-center text-center cursor-pointer hover:text-teal-400">
+                <div
+                  id={link.id}
+                  className="self-center text-center cursor-pointer hover:text-teal-400"
+                >
                   <div className="flex justify-center ">
                     <a
                       href={link.link}
@@ -55,6 +70,26 @@ const Form = () => {
               </>
             );
           })}
+          <>
+            <div className="self-center text-center cursor-pointer hover:text-teal-400">
+              <div
+                className="flex justify-center "
+                onClick={handleEmailCopyClick}
+              >
+                <MdEmail />
+              </div>
+              <p className="text-xs">Email</p>
+            </div>
+          </>
+          {showNotification && (
+            <div
+              className="w-max absolute top-full left-1/2 flex text-xs p-2 rounded bg-slate-100"
+              style={{ transform: "translateX(-50%)" }}
+            >
+              <AiOutlineInfoCircle className=" self-center" />
+              <p className=" ml-1">Email has been copied to your clipboard!</p>
+            </div>
+          )}
         </div>
       </div>
     </section>

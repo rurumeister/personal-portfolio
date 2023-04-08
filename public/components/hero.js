@@ -21,6 +21,21 @@ const Hero = () => {
           alt="elroy-ai-render"
         />
       </div>
+      <ul className="flex items-center justify-center mt-10">
+        <li>
+          <div
+            className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md cursor-pointer self-center"
+            onClick={() => {
+              const element = document.getElementById("social-links");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Contact me
+          </div>
+        </li>
+      </ul>
     </section>
   );
 };

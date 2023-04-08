@@ -2,6 +2,8 @@ import Link from "next/link";
 import { React, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineHome } from "react-icons/ai";
+import { CgNotes } from "react-icons/cg";
+
 const HomeNavbar = () => {
   return (
     <nav className="sticky py-10 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-white shadow-md z-50 cursor-pointer">
@@ -15,13 +17,13 @@ const HomeNavbar = () => {
       </div>
 
       <ul className="flex items-center">
-        <li>
+        {/* <li>
           <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
-        </li>
+        </li> ml-8*/}
         <li>
           <Link href="/resume">
-            <div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8">
-              Resume
+            <div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md">
+              <CgNotes className="cursor-pointer text-2xl" />
             </div>
           </Link>
         </li>
@@ -36,18 +38,18 @@ const ResumeNavbar = () => {
         <Link href="/">
           <h1 className="text-xl">
             {`//elroychua`}
-            <span className="text-teal-600 hover:text-amber-300">{`<`}</span>
+            <span className="text-teal-600 hover:text-amber-300">_</span>
           </h1>
         </Link>
       </div>
 
       <ul className="flex items-center">
-        <li>
+        {/* <li>
           <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
-        </li>
+        </li> ml-8*/}
         <li>
           <Link href="/">
-            <div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8">
+            <div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ">
               <AiOutlineHome className="cursor-pointer text-2xl" />
             </div>
           </Link>
