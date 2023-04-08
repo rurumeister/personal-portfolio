@@ -1,10 +1,17 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
+import { RiCopyrightFill } from "react-icons/ri";
 import Navbar from "../public/components/navbar";
 import Hero from "../public/components/hero";
 import AboutMe from "../public/components/aboutMe";
 import WorkExperience from "../public/components/workExp";
 import Projects from "../public/components/projects";
-import ProjectCarousel from "../public/components/projectCarousel";
+const ProjectCarousel = dynamic(
+  () => import("../public/components/projectCarousel"),
+  { ssr: false }
+);
+import ContactMe from "../public/components/contactMe";
+
 import * as React from "react";
 
 function isMatch(media) {
@@ -29,7 +36,19 @@ export default function Home() {
           <WorkExperience />
           <Projects />
         </section>
-        <ProjectCarousel />
+        <section>
+          <ProjectCarousel />
+        </section>
+        <section className=" bg-white px-10 md:px-20 lg:px-40 ">
+          <ContactMe />
+          <div className="flex flex-row mt-16 mb-5 place-content-center">
+            <p className="text-center  text-gray-400 text-xs mr-1">
+              Created by Elroy Chua Ming Xuan
+            </p>
+            <RiCopyrightFill className="text-gray-400" />
+            <p className="text-center  text-gray-400 text-xs ml-1">2023</p>
+          </div>
+        </section>
       </main>
     </>
   );

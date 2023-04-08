@@ -221,9 +221,8 @@ const ProjectCarouselMobile = () => {
     </>
   );
 };
-const ProjectCarousel = ({ screenWidth }) => {
+const ProjectCarousel = () => {
   const isInitialRequestLessThan700 = useMediaQuery("(min-width:700px)");
-
   if (!isInitialRequestLessThan700) {
     return <ProjectCarouselMobile />;
   } else {

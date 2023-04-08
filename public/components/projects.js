@@ -1,8 +1,7 @@
 const Projects = () => {
   return (
     <>
-      <div className=" h-32"></div>
-      <div>
+      <div className=" mt-32">
         <h3 className="text-3xl py-1">Projects</h3>
         <p className="text-md py-2 leading-8 text-gray-800">
           {`Projects I've worked on include a React-based website using
