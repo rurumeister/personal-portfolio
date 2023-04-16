@@ -4,6 +4,7 @@ import { RiCopyrightFill } from "react-icons/ri";
 import Navbar from "../public/components/navbar";
 import Hero from "../public/components/hero";
 import AboutMe from "../public/components/aboutMe";
+import Skills from "../public/components/skills";
 import WorkExperience from "../public/components/workExp";
 import Projects from "../public/components/projects";
 const ProjectCarousel = dynamic(
@@ -28,6 +29,7 @@ export default function Home() {
         <section className=" bg-white pt-12 px-10 md:px-20 lg:px-40">
           <Hero />
           <AboutMe />
+          {/* <Skills /> */}
           <WorkExperience />
           <Projects />
         </section>

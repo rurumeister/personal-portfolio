@@ -38,12 +38,12 @@ const AboutMe = () => {
             width="100"
             height="100"
           />
-          <h3 className="text-lg font-medium pt-8 pb-2">UX Designer</h3>
+          <h3 className="text-lg font-medium pt-8 pb-2">UX Design</h3>
           <p className="py-2">
             Crafting elegant designs to meet your needs through design theory
             and stakeholder input.
           </p>
-          <h4 className="py-4 text-teal-600">Design tools I use</h4>
+          <h4 className="py-4 text-teal-600">Design tools</h4>
           <p className="text-gray-600 py-1">Adobe XD</p>
           <p className="text-gray-600 py-1">Miro</p>
           <p className="text-gray-600 py-1">Figma</p>
@@ -56,12 +56,14 @@ const AboutMe = () => {
             width="100"
             height="100"
           />
-          <h3 className="text-lg font-medium pt-8 pb-2">Front-end Developer</h3>
+          <h3 className="text-lg font-medium pt-8 pb-2">
+            Front-end Development
+          </h3>
           <p className="py-2">
             Designing, implementing and maintainings user interface of websites
             and applications.
           </p>
-          <h4 className="py-4 text-teal-600">Languages I use</h4>
+          <h4 className="py-4 text-teal-600">Languages</h4>
           <p className="text-gray-600 py-1">ReactJS</p>
           <p className="text-gray-600 py-1">NextJS</p>
           <p className="text-gray-600 py-1">NodeJS</p>
@@ -75,12 +77,14 @@ const AboutMe = () => {
             width="100"
             height="100"
           />
-          <h3 className="text-lg font-medium pt-8 pb-2">Back-end Developer</h3>
+          <h3 className="text-lg font-medium pt-8 pb-2">
+            Back-end Development
+          </h3>
           <p className="py-2">
             Designing, implementing and maintainings user interface of websites
             and applications.
           </p>
-          <h4 className="py-4 text-teal-600">Languages used</h4>
+          <h4 className="py-4 text-teal-600">Languages</h4>
           <p className="text-gray-600 py-1">ExpressJS</p>
           <p className="text-gray-600 py-1">PostgreSQL</p>
           <p className="text-gray-600 py-1">MongoDB</p>
