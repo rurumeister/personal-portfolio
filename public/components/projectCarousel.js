@@ -55,10 +55,26 @@ const ProjectCarouselWeb = () => {
           className="w-80 min-h-full bg-center bg-cover"
           style={{ width: "600px", height: "300px" }}
         >
+          <div className=" bg-[url('/project_bg/goldenrizz.png')] min-h-full text-center rounded-lg">
+            <div className="pt-60 text-4xl flex justify-center gap-10 ">
+              <a
+                href="https://github.com/EternalDoritos/cinema-booking-system"
+                className="text-gray-300 hover:text-teal-400"
+                target="blank"
+              >
+                <AiFillGithub />
+              </a>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide
+          className="w-80 min-h-full bg-center bg-cover"
+          style={{ width: "600px", height: "300px" }}
+        >
           <div className=" bg-[url('/project_bg/appetizer.png')] min-h-full text-center rounded-lg">
             <div className="pt-60 text-4xl flex justify-center gap-10 ">
               <a
-                href="https://github.com/D2HD/getgoing-applicationa"
+                href="https://github.com/D2HD/getgoing-application"
                 className="text-gray-300 hover:text-teal-400"
                 target="blank"
               >
@@ -171,18 +187,15 @@ const ProjectCarouselMobile = () => {
             className="w-80 min-h-full bg-center bg-cover"
             style={{ width: "300px", height: "300px" }}
           >
-            <div className=" bg-[url('/project_bg_mobile/appetizer.png')] min-h-full text-center rounded-lg">
-              <div className="pt-60 text-4xl flex justify-center gap-10 ">
+            <div className=" bg-[url('/project_bg_mobile/goldenrizz.png')] min-h-full text-center rounded-lg">
+              <div className="pt-60 text-4xl flex justify-center gap-10 text-yellow-400">
                 <a
-                  href="https://github.com/D2HD/getgoing-applicationa"
-                  target="blank"
+                  href="https://github.com/EternalDoritos/cinema-booking-system"
                   className="text-gray-300 hover:text-teal-400"
+                  target="blank"
                 >
                   <AiFillGithub />
                 </a>
-                {/* <a href="#" target="blank">
-                  <MdOpenInNew />
-                </a> */}
               </div>
             </div>
           </SwiperSlide>
@@ -199,13 +212,28 @@ const ProjectCarouselMobile = () => {
                 >
                   <AiFillGithub />
                 </a>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide
+            className="w-80 min-h-full bg-center bg-cover"
+            style={{ width: "300px", height: "300px" }}
+          >
+            <div className=" bg-[url('/project_bg_mobile/appetizer.png')] min-h-full text-center rounded-lg">
+              <div className="pt-60 text-4xl flex justify-center gap-10 ">
+                <a
+                  href="https://github.com/D2HD/getgoing-application"
+                  target="blank"
+                  className="text-gray-300 hover:text-teal-400"
+                >
+                  <AiFillGithub />
+                </a>
                 {/* <a href="#" target="blank">
                   <MdOpenInNew />
                 </a> */}
               </div>
             </div>
           </SwiperSlide>
-
           <SwiperSlide
             className="w-80 min-h-full bg-center bg-cover"
             style={{ width: "300px", height: "300px" }}
@@ -219,9 +247,6 @@ const ProjectCarouselMobile = () => {
                 >
                   <AiFillGithub />
                 </a>
-                {/* <a href="#" target="blank">
-                  <MdOpenInNew />
-                </a> */}
               </div>
             </div>
           </SwiperSlide>
