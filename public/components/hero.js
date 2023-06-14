@@ -40,7 +40,7 @@ const Hero = () => {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    '<span style="color: #FFF; font-size: 1.8em ; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                    '<span style="color: #FFF; font-size: 1.75em ; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
                   )
                   .pauseFor(500)
                   .deleteChars(31)
@@ -59,7 +59,7 @@ const Hero = () => {
             />
           )}
         </div>
-        <p className="text-md text-left py-5 leading-8 text-white">
+        <p className="text-sm md:text-md text-left py-4 leading-8 text-white">
           {`I have a strong interest in user experience and project
               management, enthusiastic about utilizing new technologies to drive
               positive change and solve problems. I am a committed team player with
@@ -71,16 +71,16 @@ const Hero = () => {
         <div className=" relative bg-gradient-to-r from-purple-400 to-pink-600 mx-auto rounded-full w-60 h-60 md:w-70 md:h-70 overflow-hidden">
           <Image
             src={"/elroy_ai.png"}
-            width="400"
-            height="400"
+            width="300"
+            height="300"
             alt="elroy-ai-render"
           />
         </div>
       </div>
       <ul className="flex items-center justify-center mt-5">
         <li>
-          <div
-            className="relative bg-gradient-to-b from-purple-400 to-pink-600 text-white px-4 py-2 rounded-md cursor-pointer self-center ring ring-purple-300 ring-offset-4 ring-offset-black"
+          <button
+            className="relative bg-gradient-to-b from-purple-400 to-pink-600 text-white px-4 py-2 rounded-md cursor-pointer self-center ring ring-purple-300 ring-offset-4 ring-offset-black   hover:bg-purple-400"
             onClick={() => {
               const element = document.getElementById("social-links");
               if (element) {
@@ -89,7 +89,7 @@ const Hero = () => {
             }}
           >
             Contact me
-          </div>
+          </button>
         </li>
       </ul>
     </section>

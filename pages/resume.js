@@ -31,8 +31,8 @@ export default function Resume() {
         <link rel="icon" href="/elroy_icon.png" />
       </Head>
       <Navbar activePage="resume" />
-      <main>
-        <section className="pt-10 px-10 md:px-20 lg:px-40">
+      <main className="flex flex-col">
+        <section className="pt-10 px-10 md:px-20 lg:px-40 max-w-7xl self-center">
           <div
             style={{ maxWidth: "100%", width: "100%", padding: "10px" }}
             className="bg-slate-900 rounded-xl shadow-xl"
@@ -62,7 +62,7 @@ export default function Resume() {
                 />
               )}
             </Document>
-            <p>
+            <p className="text-white">
               Page {pageNumber} of {numPages}
             </p>
           </div>

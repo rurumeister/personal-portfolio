@@ -13,11 +13,11 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 const ProjectCarouselWeb = () => {
   return (
-    <div className="bg-black">
+    <>
       <Swiper
         style={{
           width: "100%",
-          paddingTop: "25px",
+          paddingTop: "40px",
           paddingBottom: "50px",
           "--swiper-pagination-bullet-inactive-color": "#999999",
         }}
@@ -97,10 +97,10 @@ const ProjectCarouselWeb = () => {
           style={{ width: "600px", height: "300px" }}
         >
           <div className=" bg-[url('/project_bg/csit.png')] min-h-full text-center rounded-lg">
-            <div className="pt-60 text-4xl flex justify-center gap-10 ">
+            <div className="pt-60 text-4xl flex justify-center gap-10 onhover:z ">
               <a
                 href="https://github.com/EternalDoritos/RoomBookingApplication"
-                className="text-gray-300 hover:text-teal-400"
+                className="text-slate-700 hover:text-teal-400"
                 target="blank"
               >
                 <AiFillGithub />
@@ -134,14 +134,14 @@ const ProjectCarouselWeb = () => {
         >
           <div className=" bg-slate-500 opacity-50 min-h-full text-center rounded-lg">
             <div className=" pt-32">
-              <h1 className=" text-3xl font-semibold text-black">
+              <h1 className=" text-3xl font-semibold text-white">
                 Coming Soon...
               </h1>
             </div>
           </div>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </>
   );
 };
 const ProjectCarouselMobile = () => {
@@ -194,7 +194,7 @@ const ProjectCarouselMobile = () => {
               <div className="pt-60 text-4xl flex justify-center gap-10 text-yellow-400">
                 <a
                   href="https://github.com/mcbebu/D2HD"
-                  className="text-gray-300 hover:text-teal-400"
+                  className="text-slate-500 hover:text-teal-400"
                   target="blank"
                 >
                   <AiFillGithub />
@@ -259,7 +259,7 @@ const ProjectCarouselMobile = () => {
           >
             <div className=" bg-slate-500 opacity-50 min-h-full text-center rounded-lg">
               <div className=" pt-32">
-                <h1 className=" text-3xl font-semibold  text-black">
+                <h1 className=" text-3xl font-semibold  text-white">
                   Coming Soon...
                 </h1>
               </div>

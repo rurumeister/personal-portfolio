@@ -43,15 +43,21 @@ const Form = () => {
   }
   return (
     <section>
-      <h3 className="text-3xl font-bold text-white py-1 mt-8" id="social-links">
-        Contact Details
-      </h3>
+      <div
+        className="group font-mono text-3xl font-bold text-white py-1 mt-8"
+        id="social-links"
+      >
+        <span className="bg-left-bottom bg-gradient-to-r from-emerald-400 to-emerald-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          Socials
+        </span>
+      </div>
+
       <div className=" relative">
-        <p className="text-md py-2 leading-8 text-white text-left">
+        <p className="text-md py-2 leading-8 text-white text-left ">
           {`I am constantly seeking new prospects and ways to broaden my professional connections.
           Don't hesitate to reach out to me through any of these channels!`}
         </p>
-        <div className="text-5xl flex justify-center gap-5 sm:gap-16 lg:gap-44 py-10 flex-col sm:flex-row text-gray-400">
+        <div className="text-5xl flex justify-center gap-5 sm:gap-16 lg:gap-44 py-5 md:py-10 flex-col sm:flex-row text-gray-400">
           {contactLinks.map((link) => {
             return (
               <>
@@ -89,8 +95,10 @@ const Form = () => {
               className="w-max absolute top-full left-1/2 flex text-xs p-2 rounded bg-slate-100"
               style={{ transform: "translateX(-50%)" }}
             >
-              <AiOutlineInfoCircle className=" self-center" />
-              <p className=" ml-1">Email has been copied to your clipboard!</p>
+              <AiOutlineInfoCircle className="self-center text-slate-900" />
+              <p className="ml-1 text-slate-900">
+                Email has been copied to your clipboard!
+              </p>
             </div>
           )}
         </div>

@@ -56,11 +56,13 @@ const WorkExperience = () => {
   ];
   return (
     <section>
-      <div>
-        <h3 className="text-3xl font-bold text-white py-1">{`Experiences`}</h3>
+      <div className="group font-mono text-3xl font-bold text-white py-1 mt-8">
+        <span className="bg-left-bottom bg-gradient-to-r from-pink-500 to-pink-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          Experiences
+        </span>
       </div>
       <div className="">
-        <VerticalTimeline lineColor="rgb(209 213 219)">
+        <VerticalTimeline lineColor="#f0f0f0">
           {timelineElements.map((element) => {
             let isWorkIcon = element.icon === "work";
             let showButton =
@@ -74,6 +76,10 @@ const WorkExperience = () => {
                 style={{
                   boxShadow:
                     "0 0.25em 0.5 em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rbga(0, 0, 0, 0.15) !important",
+                }}
+                contentStyle={{
+                  background: "#1F2937",
+                  color: "#fff",
                 }}
                 key={element.id}
                 date={element.date}
