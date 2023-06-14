@@ -7,6 +7,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 import Navbar from "../public/components/navbar";
 import ContactMe from "../public/components/contactMe";
 import Footer from "../public/components/footer";
+import { BsFileX } from "react-icons/bs";
 
 export default function Resume() {
   const [numPages, setNumPages] = useState(null);
@@ -33,12 +34,12 @@ export default function Resume() {
       <main>
         <section className="pt-10 px-10 md:px-20 lg:px-40">
           <div
-            className="text-center"
-            style={{ maxWidth: "100%", width: "100%" }}
-            options={{ workerSrc: "/pdf.worker.js" }}
+            style={{ maxWidth: "100%", width: "100%", padding: "10px" }}
+            className="bg-white rounded-xl"
           >
-            <h2 className="text-3xl font-bold text-white py-1 text-left">
-              Resume
+            <h2 className="font-mono text-transparent bg-clip-text text-emerald-400 py-2 text-left  text-2xl md:text-5xl underline">
+              Resume.
+              <span className="font-medium text-base text-emerald-400 ">{`<br>`}</span>
             </h2>
             <Document
               file="ElroyChuaResume.pdf "
@@ -47,10 +48,11 @@ export default function Resume() {
             >
               {isInitialRequestGreaterThan700 ? (
                 <Page
+                  renderMode="canvas"
                   pageNumber={pageNumber}
                   renderAnnotationLayer={false}
                   renderTextLayer={false}
-                  width="600"
+                  width="700"
                 />
               ) : (
                 <Page

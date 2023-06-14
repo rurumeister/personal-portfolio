@@ -18,8 +18,10 @@ const HomeNavbar = () => {
 
       <ul className="flex items-center">
         {/* <li>
-          <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
-        </li> ml-8*/}
+          <div className="px-4 py-2">
+            <BsFillMoonStarsFill className="cursor-pointer text-2xl text-yellow-300" />
+          </div>
+        </li> */}
         <li>
           <Link href="/resume">
             <div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md">

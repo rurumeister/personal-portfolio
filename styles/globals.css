@@ -21,3 +21,17 @@ a {
 .swiper-pagination-bullet-active {
   background-color: #fff !important;
 }
+
+#canvas-container {
+  width: 100%;
+  text-align: center;
+}
+
+canvas {
+  display: inline;
+}
+
+.react-pdf__Document {
+  display: flex;
+  justify-content: center;
+}
