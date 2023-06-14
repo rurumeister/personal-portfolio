@@ -43,12 +43,15 @@ const Form = () => {
   }
   return (
     <section>
-      <div className=" mt-8 relative" id="social-links">
-        <p className="text-md py-2 leading-8 text-gray-800 text-center">
-          {`I'm constantly seeking new prospects and ways to broaden my professional connections.
-          Don't hesitate to reach out to me through any of these channels.`}
+      <h3 className="text-3xl font-bold text-white py-1 mt-8" id="social-links">
+        Contact Details
+      </h3>
+      <div className=" relative">
+        <p className="text-md py-2 leading-8 text-white text-left">
+          {`I am constantly seeking new prospects and ways to broaden my professional connections.
+          Don't hesitate to reach out to me through any of these channels!`}
         </p>
-        <div className="text-5xl flex justify-center gap-5 sm:gap-16 lg:gap-44 py-10 flex-col sm:flex-row text-gray-600">
+        <div className="text-5xl flex justify-center gap-5 sm:gap-16 lg:gap-44 py-10 flex-col sm:flex-row text-gray-400">
           {contactLinks.map((link) => {
             return (
               <>

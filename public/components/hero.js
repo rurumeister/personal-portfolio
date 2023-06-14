@@ -1,11 +1,65 @@
 import Image from "next/image";
+import Typewriter from "typewriter-effect";
+import useMediaQuery from "@mui/material/useMediaQuery";
 const Hero = () => {
+  const isInitialRequestGreaterThan700 = useMediaQuery("(min-width:700px)");
   return (
     <section>
       <div className="text-center">
-        <h2 className="text-5xl py-2 text-teal-600 font-medium">Elroy Chua</h2>
-        <h3 className="text-2xl py-2">Full Stack Developer and CS Student.</h3>
-        <p className="text-md text-left py-5 leading-8 text-gray-800">
+        <h2 className="font-bold  text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 pb-5 text-5xl md:text-8xl">
+          Hi, I am Elroy Chua
+        </h2>
+        <div style={{ minHeight: "75px" }}>
+          {isInitialRequestGreaterThan700 ? (
+            <Typewriter
+              style={{ minHeight: "75px" }}
+              options={{ loop: true, cursor: "🚀" }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString(
+                    '<span style="color: #FFF; font-size:3em; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                  )
+                  .pauseFor(500)
+                  .deleteChars(31)
+                  .typeString(
+                    '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                  )
+                  .pauseFor(500)
+                  .deleteChars(19)
+                  .typeString(
+                    '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>Designer</strong>.</span>'
+                  )
+                  .pauseFor(500)
+                  .deleteChars(12)
+                  .start();
+              }}
+            />
+          ) : (
+            <Typewriter
+              options={{ loop: true, cursor: "🚀" }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString(
+                    '<span style="color: #FFF; font-size: 1.8em ; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                  )
+                  .pauseFor(500)
+                  .deleteChars(31)
+                  .typeString(
+                    '<span style="color: #FFF; font-size: 1.8em ; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                  )
+                  .pauseFor(500)
+                  .deleteChars(19)
+                  .typeString(
+                    '<span style="color: #FFF; font-size: 1.8em ; font-family: system-ui;"><strong>Designer</strong>.</span>'
+                  )
+                  .pauseFor(500)
+                  .deleteChars(12)
+                  .start();
+              }}
+            />
+          )}
+        </div>
+        <p className="text-md text-left py-5 leading-8 text-white">
           {`I have a strong interest in user experience and project
               management, enthusiastic about utilizing new technologies to drive
               positive change and solve problems. I am a committed team player with
@@ -13,18 +67,20 @@ const Hero = () => {
               the success of future projects. Let's connect!`}
         </p>
       </div>
-      <div className="relative bg-gradient-to-b from-teal-500 mx-auto rounded-full w-60 h-60 md:w-80 md:h-80 overflow-hidden">
-        <Image
-          src={"/elroy_ai.png"}
-          width="500"
-          height="500"
-          alt="elroy-ai-render"
-        />
+      <div className="py-5">
+        <div className=" relative bg-gradient-to-r from-purple-400 to-pink-600 mx-auto rounded-full w-60 h-60 md:w-70 md:h-70 overflow-hidden">
+          <Image
+            src={"/elroy_ai.png"}
+            width="400"
+            height="400"
+            alt="elroy-ai-render"
+          />
+        </div>
       </div>
-      <ul className="flex items-center justify-center mt-10">
+      <ul className="flex items-center justify-center mt-5">
         <li>
           <div
-            className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md cursor-pointer self-center"
+            className="relative bg-gradient-to-b from-purple-400 to-pink-600 text-white px-4 py-2 rounded-md cursor-pointer self-center ring ring-purple-300 ring-offset-4 ring-offset-black"
             onClick={() => {
               const element = document.getElementById("social-links");
               if (element) {

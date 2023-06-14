@@ -57,9 +57,9 @@ const WorkExperience = () => {
   return (
     <section>
       <div>
-        <h3 className="text-3xl py-1">{`Work Experience & Education`}</h3>
+        <h3 className="text-3xl font-bold text-white py-1">{`Experiences`}</h3>
       </div>
-      <div>
+      <div className="">
         <VerticalTimeline lineColor="rgb(209 213 219)">
           {timelineElements.map((element) => {
             let isWorkIcon = element.icon === "work";

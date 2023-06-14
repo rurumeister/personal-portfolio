@@ -6,10 +6,10 @@ import { CgNotes } from "react-icons/cg";
 
 const HomeNavbar = () => {
   return (
-    <nav className="sticky py-10 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-white shadow-md z-50 cursor-pointer">
+    <nav className="sticky py-10 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-slate-950 bg-opacity-80 backdrop-blur-sm shadow-md z-50 cursor-pointer">
       <div className="flex justify-items-center">
         <Link href="/">
-          <h1 className="text-xl">
+          <h1 className="text-2xl text-white">
             {`//elroychua`}
             <span className="text-teal-600 hover:text-amber-300">_</span>
           </h1>
@@ -33,10 +33,10 @@ const HomeNavbar = () => {
 };
 const ResumeNavbar = () => {
   return (
-    <nav className="sticky py-10 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-white shadow-md z-50 cursor-pointer">
+    <nav className="sticky py-10 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-slate-950 bg-opacity-80 backdrop-blur-sm shadow-md z-50 cursor-pointer">
       <div className="flex justify-items-center">
         <Link href="/">
-          <h1 className="text-xl">
+          <h1 className="text-2xl text-white">
             {`//elroychua`}
             <span className="text-teal-600 hover:text-amber-300">_</span>
           </h1>

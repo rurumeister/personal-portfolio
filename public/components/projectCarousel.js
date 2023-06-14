@@ -13,12 +13,13 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 const ProjectCarouselWeb = () => {
   return (
-    <div>
+    <div className="bg-black">
       <Swiper
         style={{
           width: "100%",
           paddingTop: "25px",
           paddingBottom: "50px",
+          "--swiper-pagination-bullet-inactive-color": "#999999",
         }}
         effect={"coverflow"}
         grabCursor={true}
@@ -51,22 +52,7 @@ const ProjectCarouselWeb = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide
-          className="w-80 min-h-full bg-center bg-cover"
-          style={{ width: "600px", height: "300px" }}
-        >
-          <div className=" bg-[url('/project_bg/goldenrizz.png')] min-h-full text-center rounded-lg">
-            <div className="pt-60 text-4xl flex justify-center gap-10 ">
-              <a
-                href="https://github.com/EternalDoritos/cinema-booking-system"
-                className="text-gray-300 hover:text-teal-400"
-                target="blank"
-              >
-                <AiFillGithub />
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
+
         <SwiperSlide
           className="w-80 min-h-full bg-center bg-cover"
           style={{ width: "600px", height: "300px" }}
@@ -130,6 +116,22 @@ const ProjectCarouselWeb = () => {
           className="w-80 min-h-full bg-center bg-cover"
           style={{ width: "600px", height: "300px" }}
         >
+          <div className=" bg-[url('/project_bg/goldenrizz.png')] min-h-full text-center rounded-lg">
+            <div className="pt-60 text-4xl flex justify-center gap-10 ">
+              <a
+                href="https://github.com/EternalDoritos/cinema-booking-system"
+                className="text-gray-300 hover:text-teal-400"
+                target="blank"
+              >
+                <AiFillGithub />
+              </a>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide
+          className="w-80 min-h-full bg-center bg-cover"
+          style={{ width: "600px", height: "300px" }}
+        >
           <div className=" bg-slate-500 opacity-50 min-h-full text-center rounded-lg">
             <div className=" pt-32">
               <h1 className=" text-3xl font-semibold text-black">
@@ -183,22 +185,7 @@ const ProjectCarouselMobile = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide
-            className="w-80 min-h-full bg-center bg-cover"
-            style={{ width: "300px", height: "300px" }}
-          >
-            <div className=" bg-[url('/project_bg_mobile/goldenrizz.png')] min-h-full text-center rounded-lg">
-              <div className="pt-60 text-4xl flex justify-center gap-10 text-yellow-400">
-                <a
-                  href="https://github.com/EternalDoritos/cinema-booking-system"
-                  className="text-gray-300 hover:text-teal-400"
-                  target="blank"
-                >
-                  <AiFillGithub />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
+
           <SwiperSlide
             className="w-80 min-h-full bg-center bg-cover"
             style={{ width: "300px", height: "300px" }}
@@ -242,6 +229,22 @@ const ProjectCarouselMobile = () => {
               <div className="pt-60 text-4xl flex justify-center gap-10 text-yellow-400">
                 <a
                   href="https://github.com/EternalDoritos/RoomBookingApplication"
+                  className="text-gray-300 hover:text-teal-400"
+                  target="blank"
+                >
+                  <AiFillGithub />
+                </a>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide
+            className="w-80 min-h-full bg-center bg-cover"
+            style={{ width: "300px", height: "300px" }}
+          >
+            <div className=" bg-[url('/project_bg_mobile/goldenrizz.png')] min-h-full text-center rounded-lg">
+              <div className="pt-60 text-4xl flex justify-center gap-10 text-yellow-400">
+                <a
+                  href="https://github.com/EternalDoritos/cinema-booking-system"
                   className="text-gray-300 hover:text-teal-400"
                   target="blank"
                 >
