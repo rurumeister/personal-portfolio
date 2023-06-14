@@ -35,11 +35,10 @@ export default function Resume() {
         <section className="pt-10 px-10 md:px-20 lg:px-40">
           <div
             style={{ maxWidth: "100%", width: "100%", padding: "10px" }}
-            className="bg-white rounded-xl"
+            className="bg-slate-900 rounded-xl shadow-xl"
           >
-            <h2 className="font-mono text-transparent bg-clip-text text-emerald-400 py-2 text-left  text-2xl md:text-5xl underline">
+            <h2 className="font-mono bg-clip-text text-emerald-400 py-2 text-left  text-2xl md:text-5xl">
               Resume.
-              <span className="font-medium text-base text-emerald-400 ">{`<br>`}</span>
             </h2>
             <Document
               file="ElroyChuaResume.pdf "
@@ -52,7 +51,7 @@ export default function Resume() {
                   pageNumber={pageNumber}
                   renderAnnotationLayer={false}
                   renderTextLayer={false}
-                  width="700"
+                  width="600"
                 />
               ) : (
                 <Page
