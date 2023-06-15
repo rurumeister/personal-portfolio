@@ -40,23 +40,6 @@ const ProjectCarouselWeb = () => {
           className="w-80 min-h-full bg-center bg-cover"
           style={{ width: "600px", height: "300px" }}
         >
-          <div className=" bg-[url('/project_bg/getpaid.png')] min-h-full text-center rounded-lg">
-            <div className="pt-60 text-4xl flex justify-center gap-10 ">
-              <a
-                href="https://www.getpaid.asia/"
-                className="text-gray-300 hover:text-teal-400"
-                target="blank"
-              >
-                <MdOpenInNew />
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          className="w-80 min-h-full bg-center bg-cover"
-          style={{ width: "600px", height: "300px" }}
-        >
           <div className=" bg-[url('/project_bg/appetizer.png')] min-h-full text-center rounded-lg">
             <div className="pt-60 text-4xl flex justify-center gap-10 ">
               <a
@@ -173,19 +156,21 @@ const ProjectCarouselMobile = () => {
             className="w-80 min-h-full bg-center bg-cover"
             style={{ width: "300px", height: "300px" }}
           >
-            <div className=" bg-[url('/project_bg_mobile/getpaid.png')] min-h-full text-center rounded-lg drop-shadow-sm">
+            <div className=" bg-[url('/project_bg_mobile/appetizer.png')] min-h-full text-center rounded-lg">
               <div className="pt-60 text-4xl flex justify-center gap-10 ">
                 <a
-                  href="https://www.getpaid.asia/"
-                  className="text-gray-300 hover:text-teal-400"
+                  href="https://github.com/D2HD/getgoing-application"
                   target="blank"
+                  className="text-gray-300 hover:text-teal-400"
                 >
-                  <MdOpenInNew />
+                  <AiFillGithub />
                 </a>
+                {/* <a href="#" target="blank">
+                  <MdOpenInNew />
+                </a> */}
               </div>
             </div>
           </SwiperSlide>
-
           <SwiperSlide
             className="w-80 min-h-full bg-center bg-cover"
             style={{ width: "300px", height: "300px" }}
@@ -199,25 +184,6 @@ const ProjectCarouselMobile = () => {
                 >
                   <AiFillGithub />
                 </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide
-            className="w-80 min-h-full bg-center bg-cover"
-            style={{ width: "300px", height: "300px" }}
-          >
-            <div className=" bg-[url('/project_bg_mobile/appetizer.png')] min-h-full text-center rounded-lg">
-              <div className="pt-60 text-4xl flex justify-center gap-10 ">
-                <a
-                  href="https://github.com/D2HD/getgoing-application"
-                  target="blank"
-                  className="text-gray-300 hover:text-teal-400"
-                >
-                  <AiFillGithub />
-                </a>
-                {/* <a href="#" target="blank">
-                  <MdOpenInNew />
-                </a> */}
               </div>
             </div>
           </SwiperSlide>

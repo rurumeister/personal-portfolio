@@ -6,7 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 const WorkExperience = () => {
-  let timelineElements = [
+  let workTimelineElements = [
     {
       id: 1,
       title: "FullStack Developer (Intern)",
@@ -33,8 +33,10 @@ const WorkExperience = () => {
       date: "April 2022 - November 2022",
       icon: "work",
     },
+  ];
+  let educationTimelineElements = [
     {
-      id: 3,
+      id: 1,
       title: "Bachelor of Science, Computer Science (Big Data)",
       location: "University of Wollongong - SIM GE",
       description:
@@ -44,7 +46,7 @@ const WorkExperience = () => {
       icon: "school",
     },
     {
-      id: 4,
+      id: 2,
       title: "Diploma in Spatial Design",
       location: "Nanyang Polytechnic, Singapore",
       description:
@@ -57,19 +59,61 @@ const WorkExperience = () => {
   return (
     <section>
       <div className="group font-mono text-3xl font-bold text-white py-1 mt-8">
-        <span className="bg-left-bottom bg-gradient-to-r from-pink-500 to-pink-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-          Experiences
+        <span className="bg-left-bottom bg-gradient-to-r from-emerald-400 to-emerald-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          Work Experience
         </span>
       </div>
       <div className="">
         <VerticalTimeline lineColor="#f0f0f0">
-          {timelineElements.map((element) => {
-            let isWorkIcon = element.icon === "work";
-            let showButton =
-              element.buttonText !== undefined &&
-              element.buttonText !== null &&
-              element.buttonText !== "";
+          {workTimelineElements.map((element) => {
             let workIconStyles = { background: "#06D6A0", color: "#FFF" };
+
+            return (
+              <VerticalTimelineElement
+                style={{
+                  boxShadow:
+                    "0 0.25em 0.5 em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rbga(0, 0, 0, 0.15) !important",
+                }}
+                contentStyle={{
+                  background: "#1F2937",
+                  color: "#fff",
+                }}
+                key={element.id}
+                date={element.date}
+                dateClassName="date"
+                iconStyle={workIconStyles}
+                icon={<WorkIcon />}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  {element.title}
+                </h3>
+                <h5 className="vertical-timeline-element-subtitle">
+                  {element.location}
+                </h5>
+                <p id="description">{element.description}</p>
+                {/* {showButton && (
+                      <a
+                        className={`button ${
+                          isWorkIcon ? "workButton" : "schoolButton"
+                        }`}
+                        href="#"
+                      >
+                        {element.buttonText}
+                      </a>
+                    )} */}
+              </VerticalTimelineElement>
+            );
+          })}
+        </VerticalTimeline>
+      </div>
+      <div className="group font-mono text-3xl font-bold text-white py-1 mt-8">
+        <span className="bg-left-bottom bg-gradient-to-r from-yellow-400 to-yellow-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          Education
+        </span>
+      </div>
+      <div className="">
+        <VerticalTimeline lineColor="#f0f0f0">
+          {educationTimelineElements.map((element) => {
             let schoolIconStyles = { background: "#F9C74F", color: "#FFF" };
             return (
               <VerticalTimelineElement
@@ -84,8 +128,8 @@ const WorkExperience = () => {
                 key={element.id}
                 date={element.date}
                 dateClassName="date"
-                iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-                icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
+                iconStyle={schoolIconStyles}
+                icon={<SchoolIcon />}
               >
                 <h3 className="vertical-timeline-element-title">
                   {element.title}

@@ -53,7 +53,7 @@ const Form = () => {
       </div>
 
       <div className=" relative">
-        <p className="text-md py-2 leading-8 text-white text-left ">
+        <p className="text-sm md:text-md py-2 leading-8 text-white text-left ">
           {`I am constantly seeking new prospects and ways to broaden my professional connections.
           Don't hesitate to reach out to me through any of these channels!`}
         </p>
