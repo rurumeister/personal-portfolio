@@ -27,10 +27,10 @@ const Hero = () => {
                   .pauseFor(500)
                   .deleteChars(19)
                   .typeString(
-                    '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>Designer</strong>.</span>'
+                    '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>UX Designer</strong>.</span>'
                   )
                   .pauseFor(500)
-                  .deleteChars(12)
+                  .deleteChars(15)
                   .start();
               }}
             />
@@ -80,7 +80,7 @@ const Hero = () => {
       <ul className="flex items-center justify-center mt-5">
         <li>
           <button
-            className="relative bg-gradient-to-b from-purple-400 to-pink-600 text-white px-4 py-2 rounded-md cursor-pointer self-center ring ring-purple-300 ring-offset-4 ring-offset-black   hover:bg-purple-400"
+            className="relative bg-gradient-to-b from-purple-400 to-pink-600 text-white hover:font-semibold px-4 py-2 rounded-md cursor-pointer self-center ring ring-purple-300 ring-offset-4 ring-offset-black hover:ring-white "
             onClick={() => {
               const element = document.getElementById("social-links");
               if (element) {

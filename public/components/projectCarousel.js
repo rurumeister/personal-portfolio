@@ -103,7 +103,7 @@ const ProjectCarouselWeb = () => {
             <div className="pt-60 text-4xl flex justify-center gap-10 ">
               <a
                 href="https://github.com/EternalDoritos/cinema-booking-system"
-                className="text-gray-300 hover:text-teal-400"
+                className="text-slate-50 hover:text-teal-400"
                 target="blank"
               >
                 <AiFillGithub />
@@ -179,7 +179,7 @@ const ProjectCarouselMobile = () => {
               <div className="pt-60 text-4xl flex justify-center gap-10 text-yellow-400">
                 <a
                   href="https://github.com/mcbebu/D2HD"
-                  className="text-slate-500 hover:text-teal-400"
+                  className="text-gray-300 hover:text-teal-400"
                   target="blank"
                 >
                   <AiFillGithub />
@@ -211,7 +211,7 @@ const ProjectCarouselMobile = () => {
               <div className="pt-60 text-4xl flex justify-center gap-10 text-yellow-400">
                 <a
                   href="https://github.com/EternalDoritos/cinema-booking-system"
-                  className="text-gray-300 hover:text-teal-400"
+                  className="text-slate-50 hover:text-teal-400"
                   target="blank"
                 >
                   <AiFillGithub />
