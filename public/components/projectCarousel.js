@@ -111,18 +111,6 @@ const ProjectCarouselWeb = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide
-          className="w-80 min-h-full bg-center bg-cover"
-          style={{ width: "600px", height: "300px" }}
-        >
-          <div className=" bg-slate-500 opacity-50 min-h-full text-center rounded-lg">
-            <div className=" pt-32">
-              <h1 className=" text-3xl font-semibold text-white">
-                Coming Soon...
-              </h1>
-            </div>
-          </div>
-        </SwiperSlide>
       </Swiper>
     </>
   );
@@ -216,18 +204,6 @@ const ProjectCarouselMobile = () => {
                 >
                   <AiFillGithub />
                 </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide
-            className="w-80 min-h-full bg-center bg-cover"
-            style={{ width: "300px", height: "300px" }}
-          >
-            <div className=" bg-slate-500 opacity-50 min-h-full text-center rounded-lg">
-              <div className=" pt-32">
-                <h1 className=" text-3xl font-semibold  text-white">
-                  Coming Soon...
-                </h1>
               </div>
             </div>
           </SwiperSlide>
