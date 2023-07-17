@@ -76,6 +76,7 @@ const ResumeNavbar = () => {
 const navbar = ({ activePage }) => {
   if (activePage === "home") return <HomeNavbar />;
   else if (activePage === "resume") return <ResumeNavbar />;
+  else if (activePage === "project") return <HomeNavbar />;
   else return 0;
 };
 export default navbar;

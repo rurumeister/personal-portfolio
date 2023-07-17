@@ -4,12 +4,13 @@ import { MdOpenInNew } from "react-icons/md";
 //Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import useMediaQuery from "@mui/material/useMediaQuery";
+//
+import Link from "next/link";
 
 const ProjectCarouselWeb = () => {
   return (
@@ -49,12 +50,16 @@ const ProjectCarouselWeb = () => {
               >
                 <AiFillGithub />
               </a>
-              {/* <a href="#" target="blank">
+              <Link
+                href="/projects/appetizer"
+                className="text-gray-300 hover:text-teal-400"
+              >
                 <MdOpenInNew />
-              </a> */}
+              </Link>
             </div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide
           className="w-80 min-h-full bg-center bg-cover"
           style={{ width: "600px", height: "300px" }}
@@ -153,9 +158,12 @@ const ProjectCarouselMobile = () => {
                 >
                   <AiFillGithub />
                 </a>
-                {/* <a href="#" target="blank">
+                <Link
+                  href="/projects/appetizer"
+                  className="text-gray-300 hover:text-teal-400"
+                >
                   <MdOpenInNew />
-                </a> */}
+                </Link>
               </div>
             </div>
           </SwiperSlide>
