@@ -9,28 +9,36 @@ const WorkExperience = () => {
   let workTimelineElements = [
     {
       id: 1,
-      title: "FullStack Developer (Intern)",
-      location: "GetPaid, Singapore",
-      description: `Improved the front-end solutions to address user-reported issues on external-facing
-      tools, created APIs to automate email communication & enable multi-language support
-      and was responsible for overseeing regression testing, which led to a 75% increase in the
-      efficiency of resolving support issues.
-
-      Tech used: ReactJS | TypeScript | NextJS | PostgreSQL`,
+      title: "FullStack Developer Software Engineer - Intern",
+      location: "Ensign InfoSecurity, Singapore",
+      description:
+        "Collaborating in the design, development and maintenance of web applications and stable back-end architectures.",
+      // stack: "Tech Stack: ReactJS | TypeScript | NextJS | PostgreSQL",
       buttonText: "View Work",
-      date: "November 2022 - Present",
+      date: "Aug 2023 - Jan 2024",
       icon: "work",
     },
     {
       id: 2,
-      title: "Software Engineer (Intern)",
+      title: "FullStack Developer - Intern",
       location: "GetPaid, Singapore",
-      description: `Built a cost-effective onboarding app using React, which replaced a WordPress
-      website and streamlined blog post publishing through a CMS and improved integration speed
-      with external APIs by conducting regression testing during external tool development. Tech used:
-      ReactJS | NextJS | GraphQL`,
+      description:
+        "Full Stack development in the GetPaid production monorepo: improved user experience of web portal for GetPaid users and partner onboarding.",
+      stack:
+        "Tech Stack: PostgreSQL | Prisma | GraphQL | React | NextJS | Javascript | TypeScript",
       buttonText: "View Work",
-      date: "April 2022 - November 2022",
+      date: "Nov 2022 - Jul 2023",
+      icon: "work",
+    },
+    {
+      id: 3,
+      title: "Software Engineer - Intern",
+      location: "GetPaid, Singapore",
+      description:
+        "Development in the GetPaid web repo: developed a cost-effective onboarding web application.",
+      stack: "Tech Stack: GraphQL | React | NextJS | Javascript",
+      buttonText: "View Work",
+      date: "Apr 2022 - Nov 2022",
       icon: "work",
     },
   ];
@@ -39,10 +47,11 @@ const WorkExperience = () => {
       id: 1,
       title: "Bachelor of Science, Computer Science (Big Data)",
       location: "University of Wollongong - SIM GE",
-      description:
-        "GPA 3.6/4 Extra-curriculars: Data Analytics Club (Analyst) & IT Club (Sub-committee)",
+      description: "GPA 3.25/4 ",
+      addedDescription:
+        "Extra-curriculars: Data Analytics Club (Analyst) & IT Club (Sub-committee)",
       buttonText: "View Degree",
-      date: "October 2021 - March 2024",
+      date: "Oct 2021 - Mar 2024",
       icon: "school",
     },
     {
@@ -67,7 +76,6 @@ const WorkExperience = () => {
         <VerticalTimeline lineColor="#f0f0f0">
           {workTimelineElements.map((element) => {
             let workIconStyles = { background: "#06D6A0", color: "#FFF" };
-
             return (
               <VerticalTimelineElement
                 style={{
@@ -90,7 +98,15 @@ const WorkExperience = () => {
                 <h5 className="vertical-timeline-element-subtitle">
                   {element.location}
                 </h5>
-                <p id="description">{element.description}</p>
+                <p id="vertical-timeline-element-description">
+                  {element.description}
+                </p>
+                {element?.stack ? (
+                  <p id="vertical-timeline-element-added-description">
+                    {element.stack}
+                  </p>
+                ) : null}
+
                 {/* {showButton && (
                       <a
                         className={`button ${
@@ -137,7 +153,15 @@ const WorkExperience = () => {
                 <h5 className="vertical-timeline-element-subtitle">
                   {element.location}
                 </h5>
-                <p id="description">{element.description}</p>
+                <p id="vertical-timeline-element-description">
+                  {element.description}
+                </p>
+                {element?.addedDescription ? (
+                  <p id="vertical-timeline-element-added-description">
+                    {element?.addedDescription}
+                  </p>
+                ) : null}
+
                 {/* {showButton && (
                       <a
                         className={`button ${

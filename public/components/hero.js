@@ -40,17 +40,17 @@ const Hero = () => {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    '<span style="color: #FFF; font-size: 1.75em ; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                    '<span style="color: #FFF; font-size: 1.5em ; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
                   )
                   .pauseFor(500)
                   .deleteChars(31)
                   .typeString(
-                    '<span style="color: #FFF; font-size: 1.8em ; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                    '<span style="color: #FFF; font-size: 1.5em ; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
                   )
                   .pauseFor(500)
                   .deleteChars(19)
                   .typeString(
-                    '<span style="color: #FFF; font-size: 1.8em ; font-family: system-ui;"><strong>Designer</strong>.</span>'
+                    '<span style="color: #FFF; font-size: 1.5em ; font-family: system-ui;"><strong>Designer</strong>.</span>'
                   )
                   .pauseFor(500)
                   .deleteChars(12)
