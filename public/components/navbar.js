@@ -6,7 +6,7 @@ import { CgNotes } from "react-icons/cg";
 
 const HomeNavbar = () => {
   return (
-    <nav className="sticky py-10 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-slate-950 bg-opacity-80 backdrop-blur-sm shadow-md z-50 cursor-pointer">
+    <nav className="sticky py-4 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-slate-950 bg-opacity-80 backdrop-blur-sm shadow-md z-50 cursor-pointer">
       <div
         className="flex justify-items-center"
         style={{ alignItems: "center" }}
