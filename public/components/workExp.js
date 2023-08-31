@@ -12,8 +12,9 @@ const WorkExperience = () => {
       title: "FullStack Developer Software Engineer - Intern",
       location: "Ensign InfoSecurity, Singapore",
       description:
-        "Collaborating in the design, development and maintenance of web applications and stable back-end architectures.",
-      // stack: "Tech Stack: ReactJS | TypeScript | NextJS | PostgreSQL",
+        "Full Stack development in the Solutions Engineering Team: Currently revamping the tech stack of an internal data visualization application from RubyOnRails to PERN stack, upgrading CI/CD pipeline to accommodate for new tech stack.",
+      stack:
+        "Tech Stack: PostgreSQL | Express.js | D3.js | React | Next.js | Docker | Kubernetes | Amazon Web Services | TypeScript | JavaScript",
       buttonText: "View Work",
       date: "Aug 2023 - Jan 2024",
       icon: "work",
@@ -25,7 +26,7 @@ const WorkExperience = () => {
       description:
         "Full Stack development in the GetPaid production monorepo: improved user experience of web portal for GetPaid users and partner onboarding.",
       stack:
-        "Tech Stack: PostgreSQL | Prisma | GraphQL | React | NextJS | Javascript | TypeScript",
+        "Tech Stack: PostgreSQL | Prisma | GraphQL | React | Next.js | TypeScript | JavaScript",
       buttonText: "View Work",
       date: "Nov 2022 - Jul 2023",
       icon: "work",
@@ -36,7 +37,7 @@ const WorkExperience = () => {
       location: "GetPaid, Singapore",
       description:
         "Development in the GetPaid web repo: developed a cost-effective onboarding web application.",
-      stack: "Tech Stack: GraphQL | React | NextJS | Javascript",
+      stack: "Tech Stack: GraphQL | React | Next.js | JavaScript",
       buttonText: "View Work",
       date: "Apr 2022 - Nov 2022",
       icon: "work",
