@@ -11,17 +11,23 @@ const AboutMe = () => {
         </div>
         <p className="text-sm md:text-md  py-2 leading-8 text-white">
           {`My experience in Spatial Design at `}
-          <span className="font-bold">Nanyang Polytechnic</span>
+          <span className="font-bold ">Nanyang Polytechnic</span>
           {` provided me with design thinking,
-              knowledge of architectural technologies, and UX design concepts. This sparked my interest in UI/UX,
-              programming concepts, and web applications. Although a high bar to entry, pursuing a Computer Science major at the `}
+              knowledge of architectural technologies, and UX design concepts. During my time in National Service I took the time to learn about the
+              fundamentals of UX design and web development. Although a high bar to entry, I pursued a Bachelors of Computer Science majoring in Big Data at the `}
           <span className="font-bold">University of Wollongong</span>
-          {` has been a fulfilling learning journey. I actively participate
-              in hackathons, interest groups, and am completing a Software Engineering cum Full-Stack
+          {` where I have learned about algorithms, programming concepts, and analytical thinking. It has been a fulfilling and exciting learning journey so far. I actively participate
+              in hackathons, interest groups, and have past work experience as a Software Engineering cum Full-Stack
               Developer Internship at `}
           <a href="https://getpaid.asia/" target="_blank">
-            <span className="text-blue-600 hover:text-amber-300 cursor-pointer">
-              GetPaidSG
+            <span className="font-bold text-emerald-300 underline underline-offset-4 hover:text-amber-300 cursor-pointer">
+              GetPaid
+            </span>
+          </a>
+          {` and a Full Stack Software Engineer Intern role at `}
+          <a href="https://www.ensigninfosecurity.com/" target="_blank">
+            <span className="font-bold text-emerald-300 underline underline-offset-4 hover:text-amber-300 cursor-pointer">
+              Ensign InfoSecurity
             </span>
           </a>
           {`.`}
@@ -44,7 +50,7 @@ const AboutMe = () => {
             and stakeholder input.
           </p>
           <h4 className="pt-4 pb-2 font-semibold text-teal-400 underline">
-            Design tools
+            Stack
           </h4>
           <div className="text-sm md:text-md ">
             <p className="text-white pb-1">Adobe XD</p>
@@ -68,13 +74,14 @@ const AboutMe = () => {
             apps.
           </p>
           <h4 className=" pt-4 pb-2 font-semibold text-teal-400 underline">
-            Languages
+            Stack
           </h4>
           <div className="text-sm md:text-md ">
-            <p className="text-white py-1">ReactJS</p>
-            <p className="text-white py-1">NextJS</p>
-            <p className="text-white py-1">NodeJS</p>
-            <p className="text-white py-1">JavaScript, HTML, CSS</p>
+            <p className="text-white py-1 ">React | Next.js | Node.js</p>
+            <p className="text-white py-1 ">D3.js | Ky.js | Axios</p>
+            <p className="text-white py-1 ">
+              ChakraUI | TailwindCSS | Emotion.js
+            </p>
           </div>
         </div>
         <div className="text-center bg-slate-300 bg-opacity-40 shadow-md hover:shadow-blue-300 p-5 md:p-10  rounded-xl my-5 md:my-10">
@@ -89,22 +96,16 @@ const AboutMe = () => {
             Back-end Development
           </h3>
           <p className="text-sm md:text-md text-white py-2">
-            Development of REST APIs and databases to support the front-end.
+            Development of REST APIs and microservices, and database management.
           </p>
           <h4 className="pt-4 pb-2 font-semibold text-teal-400 underline">
-            Languages
+            Stack
           </h4>
           <div className="text-sm md:text-md ">
             {" "}
-            <p className="text-white py-1">ExpressJS</p>
-            <p className="text-white py-1">PostgreSQL</p>
-            <p className="text-white py-1">MongoDB</p>
-            <p className="text-white py-1" id="work-top">
-              Java
-            </p>
-            <p className="text-white py-1" id="work-top">
-              Python
-            </p>
+            <p className="text-white py-1">Express.js | Objection.js</p>
+            <p className="text-white py-1">PostgreSQL | MongoDB</p>
+            <p className="text-white py-1">Java | Python | TypeScript</p>
           </div>
         </div>
       </div>
