@@ -24,15 +24,24 @@ const AboutMe = () => {
               GetPaid
             </span>
           </a>
-          {` and a Full Stack Software Engineer Intern role at `}
+          {` and currently am Full Stack Software Engineer Intern at `}
           <a href="https://www.ensigninfosecurity.com/" target="_blank">
             <span className="font-bold text-emerald-300 underline underline-offset-4 hover:text-amber-300 cursor-pointer">
               Ensign InfoSecurity
             </span>
           </a>
-          {`.`}
+          {`. I find meaning from volunteering at a local church and serving in feeding programs for
+          underprivileged children in the Philippines 🇵🇭 . I also enjoy playing the guitar 🎸 with over 6 years of
+          live playing experience, acting in several commercials 🎬, and travelling.`}
         </p>
       </div>
+      <div className="font-mono text-md md:text-xl pt-5 leading-8 text-white">
+        Programming Languages:{" "}
+        <span className="font-light text-md md:text-xl">
+          JavaScript, TypeScript, Java, Python & GraphQL.
+        </span>
+      </div>
+
       <div className="grid lg:grid-cols-3 gap-0 md:gap-4">
         <div className="text-center bg-slate-300 bg-opacity-40 shadow-md hover:shadow-red-400 p-5 md:p-10 rounded-xl my-5 md:my-10">
           <Image
@@ -49,13 +58,11 @@ const AboutMe = () => {
             Crafting elegant designs to meet your needs through design theory
             and stakeholder input.
           </p>
-          <h4 className="pt-4 pb-2 font-semibold text-teal-400 underline">
-            Stack
-          </h4>
+          <h4 className="pt-3 pb-2 font-semibold text-teal-400 ">Stack:</h4>
           <div className="text-sm md:text-md ">
-            <p className="text-white pb-1">Adobe XD</p>
-            <p className="text-white pb-1">Miro</p>
-            <p className="text-white pb-1">Figma</p>
+            <p className="text-white ">Adobe XD</p>
+            <p className="text-white ">Miro</p>
+            <p className="text-white ">Figma</p>
           </div>
         </div>
         <div className="text-center bg-slate-300 bg-opacity-40 shadow-md hover:shadow-emerald-400 p-5 md:p-10  rounded-xl my-5 md:my-10">
@@ -67,20 +74,17 @@ const AboutMe = () => {
             height="100"
           />
           <h3 className="text-white text-lg font-semibold pt-8 pb-2">
-            Front-end Development
+            Front End Development
           </h3>
           <p className="text-sm md:text-md text-white py-2">
             Designing, building, and maintaining responsive websites and web
             apps.
           </p>
-          <h4 className=" pt-4 pb-2 font-semibold text-teal-400 underline">
-            Stack
-          </h4>
+          <h4 className=" pt-3 pb-2 font-semibold text-teal-400 ">Stack:</h4>
           <div className="text-sm md:text-md ">
-            <p className="text-white py-1 ">React | Next.js | Node.js</p>
-            <p className="text-white py-1 ">D3.js | Ky.js | Axios</p>
             <p className="text-white py-1 ">
-              ChakraUI | TailwindCSS | Emotion.js
+              React | HTML | Next.js | Node.js | D3.js | Ky.js | Axios |
+              ChakraUI | TailwindCSS | CSS | Emotion.js
             </p>
           </div>
         </div>
@@ -93,19 +97,16 @@ const AboutMe = () => {
             height="100"
           />
           <h3 className=" text-white text-lg font-semibold pt-8 pb-2">
-            Back-end Development
+            Back End Development
           </h3>
           <p className="text-sm md:text-md text-white py-2">
-            Development of REST APIs and microservices, and database management.
+            Development of RESTful APIs, microservices, and database management.
           </p>
-          <h4 className="pt-4 pb-2 font-semibold text-teal-400 underline">
-            Stack
-          </h4>
-          <div className="text-sm md:text-md ">
-            {" "}
-            <p className="text-white py-1">Express.js | Objection.js</p>
-            <p className="text-white py-1">PostgreSQL | MongoDB</p>
-            <p className="text-white py-1">Java | Python | TypeScript</p>
+          <h4 className="pt-3 pb-2 font-semibold text-teal-400 ">Stack:</h4>
+          <div className="text-sm md:text-md text-white">
+            <p className="text-white py-1">
+              Express.js | Objection.js | Prisma | PostgreSQL | MongoDB | Docker
+            </p>
           </div>
         </div>
       </div>

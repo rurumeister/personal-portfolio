@@ -60,14 +60,14 @@ const Hero = () => {
           )}
         </div>
         <p className="text-sm md:text-md text-left py-4 leading-8 text-white">
-          {`I have a strong interest in user experience and software, enthusiastic about utilizing
+          {`I  have a strong interest in user experience and software development, enthusiastic about utilizing
           new technologies to drive positive change and solve problems. With over with over a year
           of hands-on experience in the `}
           <span className="font-bold">
             PostgreSQL, Express.js, React & Node.js
           </span>
           {` stack using `} <span className="font-bold">TypeScript</span>
-          {`. I am
+          {`, I believe that I can be a valuable asset to any team. I am
           a committed team player with a strong empathetic ability and am
           dedicated to contributing to the success of future projects. Let's
           connect!`}
@@ -98,7 +98,7 @@ const Hero = () => {
             Contact me
           </button> */}
           <button
-            className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+            className="text-gray-900 bg-white border border-gray-300 underline focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
             onClick={() => {
               const element = document.getElementById("social-links");
               if (element) {
