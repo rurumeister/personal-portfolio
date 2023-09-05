@@ -19,7 +19,7 @@ const projectWeb = [
   {
     imageUrl: "/project_bg/goldenrizz.png",
     title: "Movie Booking System",
-    author: "Software Methodologies Module",
+    author: "under Software Methodologies Module",
     description:
       "Full Stack developer in a team of 6 tasked to design and develop a cinema booking app using the MERN. Utilized Jira and GitHub Actions for project management and followed agile methodologies and achieved a final grade of 90%",
     githubUrl: "https://github.com/EternalDoritos/cinema-booking-system",
@@ -66,7 +66,7 @@ const projectWeb = [
   {
     imageUrl: "/project_bg/csit.png",
     title: "UOW Room Booking App",
-    author: "Project Management Module",
+    author: "under Project Management Module",
     description:
       "Developed an iOS native app to book rooms. Designed overall application layout, developed, and implemented the entire application, organized meetings and delegating tasks, leading to a final grade of 90%",
     githubUrl: "https://github.com/EternalDoritos/RoomBookingApplication",

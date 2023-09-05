@@ -19,6 +19,21 @@ a {
   box-sizing: border-box;
 }
 
+.btn-scrollTop {
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  bottom: 5%;
+  right: 40px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: #fff;
+  right: 2%;
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
 #canvas-container {
   width: 100%;
   text-align: center;

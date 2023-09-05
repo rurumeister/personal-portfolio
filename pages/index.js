@@ -11,6 +11,7 @@ const ProjectComponent = dynamic(
   () => import("../public/components/projectCarousel"),
   { ssr: false }
 );
+import ScrollToTop from "../public/components/scrollToTop";
 import ContactMe from "../public/components/contactMe";
 import Footer from "../public/components/footer";
 import * as React from "react";
@@ -35,6 +36,7 @@ export default function Home() {
           <ProjectComponent />
           <ContactMe />
           <Footer />
+          <ScrollToTop />
         </section>
       </main>
     </div>
