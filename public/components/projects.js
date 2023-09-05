@@ -10,14 +10,6 @@ const Projects = () => {
             Projects
           </span>
         </div>
-        <p className="text-sm md:text-md py-2 leading-8 text-white">
-          {`I have experience participating in two hackathons: the
-          Appetizer Hackathon organized by Naver Cloud and the Code Dojo hosted by Ninja Van.
-          Furthermore, as part of my Project Management & Software Development modules in school, I
-          successfully created a Swift Application and a full stack MERN cinema booking system respectively.
-          Currently I am pursuing
-          a project with a group of friends. Keep an eye out for anything new! `}
-        </p>
       </div>
     </>
   );

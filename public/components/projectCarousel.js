@@ -1,232 +1,158 @@
 import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
+import {
+  SiChakraui,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiExpress,
+  SiSpringboot,
+  SiPostgresql,
+  SiMongodb,
+  SiReact,
+  SiSwift,
+  SiFirebase,
+} from "react-icons/si";
 import { MdOpenInNew } from "react-icons/md";
-//Swiper imports
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import useMediaQuery from "@mui/material/useMediaQuery";
 //
 import Link from "next/link";
-
-const ProjectCarouselWeb = () => {
+const projectWeb = [
+  {
+    imageUrl: "/project_bg/goldenrizz.png",
+    title: "Movie Booking System",
+    author: "Software Methodologies Module",
+    description:
+      "Full Stack developer in a team of 6 tasked to design and develop a cinema booking app using the MERN. Utilized Jira and GitHub Actions for project management and followed agile methodologies and achieved a final grade of 90%",
+    githubUrl: "https://github.com/EternalDoritos/cinema-booking-system",
+    languages: [
+      { component: SiReact, title: "React" },
+      { component: SiTailwindcss, title: "Tailwind" },
+      { component: SiNextdotjs, title: "Next.js" },
+      { component: SiExpress, title: "Express.js" },
+      { component: SiMongodb, title: "MongoDB" },
+    ],
+  },
+  {
+    imageUrl: "/project_bg/ninjavan.png",
+    title: "Code Dojo",
+    author: "organized by Ninja Van",
+    description:
+      "Code Dojo 2023, which took place in February, provided my team and I with an opportunity to support NinjaVan's users conceptualizing a customer-centric solution for Ninja Van during a 24-hour hackathon.",
+    githubUrl: "https://github.com/mcbebu/D2HD",
+    // eslint-disable-next-line react/jsx-key
+    languages: [
+      { component: SiReact, title: "React" },
+      { component: SiChakraui, title: "ChakraUI" },
+      { component: SiNextdotjs, title: "Next.js" },
+      { component: SiSpringboot, title: "SpringBoot" },
+      { component: SiPostgresql, title: "Postgresql" },
+    ],
+  },
+  {
+    imageUrl: "/project_bg/appetizer.png",
+    title: "Appetizer Hackathon",
+    author: "organized by Naver Cloud",
+    description:
+      "Developed a web app with 3rd party APIs that aided users in kick starting their startup journey. We managed to achieve 4th place, owing strongly to our well-designed and polished prototype that we built.",
+    githubUrl: "https://github.com/D2HD/getgoing-application",
+    externalUrl: "/projects/appetizer",
+    languages: [
+      { component: SiReact, title: "React" },
+      { component: SiChakraui, title: "ChakraUI" },
+      { component: SiNextdotjs, title: "Next.js" },
+      { component: SiSpringboot, title: "SpringBoot" },
+      { component: SiPostgresql, title: "Postgresql" },
+    ],
+  },
+  {
+    imageUrl: "/project_bg/csit.png",
+    title: "UOW Room Booking App",
+    author: "Project Management Module",
+    description:
+      "Developed an iOS native app to book rooms. Designed overall application layout, developed, and implemented the entire application, organized meetings and delegating tasks, leading to a final grade of 90%",
+    githubUrl: "https://github.com/EternalDoritos/RoomBookingApplication",
+    languages: [
+      { component: SiSwift, title: "Swift" },
+      { component: SiFirebase, title: "Firebase" },
+    ],
+  },
+];
+const ProjectComponent = () => {
   return (
-    <>
-      <Swiper
-        style={{
-          width: "100%",
-          paddingTop: "40px",
-          paddingBottom: "50px",
-          "--swiper-pagination-bullet-inactive-color": "#999999",
-        }}
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide
-          className="w-80 min-h-full bg-center bg-cover"
-          style={{ width: "600px", height: "300px" }}
-        >
-          <div className=" bg-[url('/project_bg/appetizer.png')] min-h-full text-center rounded-lg">
-            <div className="pt-60 text-4xl flex justify-center gap-10 ">
-              <a
-                href="https://github.com/D2HD/getgoing-application"
-                className="text-gray-300 hover:text-teal-400"
-                target="blank"
-              >
-                <AiFillGithub />
-              </a>
-              <Link
-                href="/projects/appetizer"
-                className="text-gray-300 hover:text-teal-400"
-              >
-                <MdOpenInNew />
-              </Link>
-            </div>
-          </div>
-        </SwiperSlide>
+    <div class="flex justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row gap-4 mt-5">
+        {projectWeb.map((project, index) => {
+          return (
+            <div
+              key={index}
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <div class="relative group">
+                <Image
+                  class="rounded-t-lg group-hover:opacity-25"
+                  src={project?.imageUrl}
+                  alt={project?.title}
+                  width={600}
+                  height={400}
+                />
 
-        <SwiperSlide
-          className="w-80 min-h-full bg-center bg-cover"
-          style={{ width: "600px", height: "300px" }}
-        >
-          <div className=" bg-[url('/project_bg/ninjavan.png')] min-h-full text-center rounded-lg">
-            <div className="pt-60 text-4xl flex justify-center gap-10 ">
-              <a
-                href="https://github.com/mcbebu/D2HD"
-                className="text-gray-300 hover:text-teal-400"
-                target="blank"
-              >
-                <AiFillGithub />
-              </a>
-              {/* <a href="#" target="blank">
-                <MdOpenInNew />
-              </a> */}
-            </div>
-          </div>
-        </SwiperSlide>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="flex text-white px-4 py-2 gap-5 rounded transform scale-0 group-hover:scale-100 transition-transform duration-300">
+                    <a
+                      href={project?.githubUrl}
+                      target="blank"
+                      class="hover:text-teal-300"
+                    >
+                      <AiFillGithub size={35} />
+                    </a>
+                    {project?.externalUrl && (
+                      <Link
+                        href={project?.externalUrl}
+                        className="hover:text-teal-300"
+                      >
+                        <MdOpenInNew size={35} />
+                      </Link>
+                    )}
+                  </div>
+                </div>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div>
+                  <h4 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {project?.title}
+                  </h4>
+                  <p class="mb-3 text-xs md:text-sm font-normal text-gray-700 dark:text-gray-400">
+                    {project?.author}
+                  </p>
+                  <p class="mb-3 text-sm md:text-md font-normal text-gray-700 dark:text-gray-400">
+                    {project?.description}
+                  </p>
+                </div>
 
-        <SwiperSlide
-          className="w-80 min-h-full bg-center bg-cover"
-          style={{ width: "600px", height: "300px" }}
-        >
-          <div className=" bg-[url('/project_bg/csit.png')] min-h-full text-center rounded-lg">
-            <div className="pt-60 text-4xl flex justify-center gap-10 onhover:z ">
-              <a
-                href="https://github.com/EternalDoritos/RoomBookingApplication"
-                className="text-slate-700 hover:text-teal-400"
-                target="blank"
-              >
-                <AiFillGithub />
-              </a>
-              <p></p>
-              {/* <a href="#" target="blank">
-                <MdOpenInNew />
-              </a> */}
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide
-          className="w-80 min-h-full bg-center bg-cover"
-          style={{ width: "600px", height: "300px" }}
-        >
-          <div className=" bg-[url('/project_bg/goldenrizz.png')] min-h-full text-center rounded-lg">
-            <div className="pt-60 text-4xl flex justify-center gap-10 ">
-              <a
-                href="https://github.com/EternalDoritos/cinema-booking-system"
-                className="text-slate-50 hover:text-teal-400"
-                target="blank"
-              >
-                <AiFillGithub />
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </>
-  );
-};
-const ProjectCarouselMobile = () => {
-  return (
-    <>
-      <div>
-        <Swiper
-          style={{
-            width: "100%",
-            paddingTop: "25px",
-            paddingBottom: "50px",
-          }}
-          effect={"coverflow"}
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          pagination={true}
-          modules={[EffectCoverflow, Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide
-            className="w-80 min-h-full bg-center bg-cover"
-            style={{ width: "300px", height: "300px" }}
-          >
-            <div className=" bg-[url('/project_bg_mobile/appetizer.png')] min-h-full text-center rounded-lg">
-              <div className="pt-60 text-4xl flex justify-center gap-10 ">
-                <a
-                  href="https://github.com/D2HD/getgoing-application"
-                  target="blank"
-                  className="text-gray-300 hover:text-teal-400"
-                >
-                  <AiFillGithub />
-                </a>
-                <Link
-                  href="/projects/appetizer"
-                  className="text-gray-300 hover:text-teal-400"
-                >
-                  <MdOpenInNew />
-                </Link>
+                <div class="flex items-center text-slate-50 gap-5">
+                  {project?.languages.map((Language, index) => {
+                    const { component: LanguageIcon, title } = Language;
+
+                    return (
+                      <div key={index} class="relative">
+                        <div class="group">
+                          <div class="relative transition-transform ease-in-out duration-300 transform group-hover:-translate-y-2 group-hover:text-teal-300">
+                            <LanguageIcon size={18} />
+                          </div>
+                          <p class="opacity-0 group-hover:opacity-100 group-hover:text-teal-300 absolute text-xs -bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity ease-in-out duration-300">
+                            {title}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide
-            className="w-80 min-h-full bg-center bg-cover"
-            style={{ width: "300px", height: "300px" }}
-          >
-            <div className=" bg-[url('/project_bg_mobile/ninjavan.png')] min-h-full text-center rounded-lg">
-              <div className="pt-60 text-4xl flex justify-center gap-10 text-yellow-400">
-                <a
-                  href="https://github.com/mcbebu/D2HD"
-                  className="text-gray-300 hover:text-teal-400"
-                  target="blank"
-                >
-                  <AiFillGithub />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide
-            className="w-80 min-h-full bg-center bg-cover"
-            style={{ width: "300px", height: "300px" }}
-          >
-            <div className=" bg-[url('/project_bg_mobile/csit.png')] min-h-full text-center rounded-lg">
-              <div className="pt-60 text-4xl flex justify-center gap-10 text-yellow-400">
-                <a
-                  href="https://github.com/EternalDoritos/RoomBookingApplication"
-                  className="text-gray-300 hover:text-teal-400"
-                  target="blank"
-                >
-                  <AiFillGithub />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide
-            className="w-80 min-h-full bg-center bg-cover"
-            style={{ width: "300px", height: "300px" }}
-          >
-            <div className=" bg-[url('/project_bg_mobile/goldenrizz.png')] min-h-full text-center rounded-lg">
-              <div className="pt-60 text-4xl flex justify-center gap-10 text-yellow-400">
-                <a
-                  href="https://github.com/EternalDoritos/cinema-booking-system"
-                  className="text-slate-50 hover:text-teal-400"
-                  target="blank"
-                >
-                  <AiFillGithub />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+          );
+        })}
       </div>
-    </>
+    </div>
   );
 };
-const ProjectCarousel = () => {
-  const isInitialRequestLessThan700 = useMediaQuery("(min-width:700px)");
-  if (!isInitialRequestLessThan700) {
-    return <ProjectCarouselMobile />;
-  } else {
-    return <ProjectCarouselWeb />;
-  }
-};
 
-export default ProjectCarousel;
+export default ProjectComponent;

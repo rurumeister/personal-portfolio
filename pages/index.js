@@ -7,7 +7,7 @@ import AboutMe from "../public/components/aboutMe";
 import Skills from "../public/components/skills";
 import WorkExperience from "../public/components/workExp";
 import Projects from "../public/components/projects";
-const ProjectCarousel = dynamic(
+const ProjectComponent = dynamic(
   () => import("../public/components/projectCarousel"),
   { ssr: false }
 );
@@ -32,11 +32,7 @@ export default function Home() {
           {/* <Skills /> */}
           <WorkExperience />
           <Projects />
-        </section>
-        <section>
-          <ProjectCarousel />
-        </section>
-        <section className=" px-10 md:px-20 lg:px-40 max-w-7xl self-center">
+          <ProjectComponent />
           <ContactMe />
           <Footer />
         </section>
