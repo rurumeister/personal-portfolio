@@ -107,17 +107,6 @@ const WorkExperience = () => {
                     {element.stack}
                   </p>
                 ) : null}
-
-                {/* {showButton && (
-                      <a
-                        className={`button ${
-                          isWorkIcon ? "workButton" : "schoolButton"
-                        }`}
-                        href="#"
-                      >
-                        {element.buttonText}
-                      </a>
-                    )} */}
               </VerticalTimelineElement>
             );
           })}
@@ -162,17 +151,6 @@ const WorkExperience = () => {
                     {element?.addedDescription}
                   </p>
                 ) : null}
-
-                {/* {showButton && (
-                      <a
-                        className={`button ${
-                          isWorkIcon ? "workButton" : "schoolButton"
-                        }`}
-                        href="#"
-                      >
-                        {element.buttonText}
-                      </a>
-                    )} */}
               </VerticalTimelineElement>
             );
           })}
