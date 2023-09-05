@@ -1,16 +1,11 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import { RiCopyrightFill } from "react-icons/ri";
 import Navbar from "../public/components/navbar";
 import Hero from "../public/components/hero";
 import AboutMe from "../public/components/aboutMe";
-import Skills from "../public/components/skills";
+// import Skills from "../public/components/skills";
 import WorkExperience from "../public/components/workExp";
 import Projects from "../public/components/projects";
-const ProjectComponent = dynamic(
-  () => import("../public/components/projectCarousel"),
-  { ssr: false }
-);
 import ScrollToTop from "../public/components/scrollToTop";
 import ContactMe from "../public/components/contactMe";
 import Footer from "../public/components/footer";
@@ -33,7 +28,6 @@ export default function Home() {
           {/* <Skills /> */}
           <WorkExperience />
           <Projects />
-          <ProjectComponent />
           <ContactMe />
           <Footer />
           <ScrollToTop />
