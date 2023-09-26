@@ -20,7 +20,7 @@ import { MdOpenInNew } from "react-icons/md";
 import Link from "next/link";
 const projectWeb = [
   {
-    imageUrl: "/project_bg/stealth.png",
+    imageUrl: "/img/project_bg/stealth.png",
     title: "Edutech web app",
     author: "side-project",
     description:
@@ -34,7 +34,7 @@ const projectWeb = [
     ],
   },
   {
-    imageUrl: "/project_bg/goldenrizz.png",
+    imageUrl: "/img/project_bg/goldenrizz.png",
     title: "Movie booking system",
     author: "under Software Methodologies Module",
     description:
@@ -49,7 +49,7 @@ const projectWeb = [
     ],
   },
   {
-    imageUrl: "/project_bg/ninjavan.png",
+    imageUrl: "/img/project_bg/ninjavan.png",
     title: "Code Dojo hackathon",
     author: "organized by Ninja Van",
     description:
@@ -64,7 +64,7 @@ const projectWeb = [
     ],
   },
   {
-    imageUrl: "/project_bg/appetizer.png",
+    imageUrl: "/img/project_bg/appetizer.png",
     title: "Appetizer hackathon",
     author: "organized by Naver Cloud",
     description:
@@ -80,7 +80,7 @@ const projectWeb = [
     ],
   },
   {
-    imageUrl: "/project_bg/csit.png",
+    imageUrl: "/img/project_bg/csit.png",
     title: "Room booking app",
     author: "under Project Management Module",
     description:

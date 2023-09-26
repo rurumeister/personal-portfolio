@@ -60,23 +60,18 @@ const Hero = () => {
           )}
         </div>
         <p className="text-sm md:text-md text-left py-4 leading-8 text-white">
-          {`I  have a strong interest in user experience and software development, enthusiastic about utilizing
-          new technologies to drive positive change and solve problems. With over with over a year
-          of hands-on experience in the `}
+          {`I'm passionate about user experience and software development, eager to leverage new technologies for positive change and problem-solving. With over a year of hands-on experience in `}
           <span className="font-bold">
             PostgreSQL, Express.js, React & Node.js
           </span>
-          {` stack using `} <span className="font-bold">TypeScript</span>
-          {`, I believe that I can be a valuable asset to any team. I am
-          a committed team player with a strong empathetic ability and am
-          dedicated to contributing to the success of future projects. Let's
-          connect!`}
+          {` with `} <span className="font-bold">TypeScript</span>
+          {`. Let's connect!`}
         </p>
       </div>
       <div className="py-5">
         <div className=" relative bg-gradient-to-r from-purple-400 to-pink-600 mx-auto rounded-full w-60 h-60 md:w-70 md:h-70 overflow-hidden">
           <Image
-            src={"/elroy_ai.png"}
+            src={"/img/elroy_ai.png"}
             width="300"
             height="300"
             alt="elroy-ai-render"

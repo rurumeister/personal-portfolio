@@ -58,25 +58,24 @@ const Form = () => {
           Don't hesitate to reach out to me through any of these channels!`}
         </p>
         <div className="text-5xl flex justify-center gap-5 sm:gap-16 lg:gap-44 py-5 md:py-10 flex-col sm:flex-row text-gray-400">
-          {contactLinks.map((link) => {
+          {contactLinks.map((link, index) => {
             return (
-              <>
-                <div
-                  id={link.id}
-                  className="self-center text-center cursor-pointer hover:text-teal-400"
-                >
-                  <div className="flex justify-center ">
-                    <a
-                      href={link.link}
-                      className="justify-items-center"
-                      target="blank"
-                    >
-                      {link.icon}
-                    </a>
-                  </div>
-                  <p className="text-xs">{link.subtitle}</p>
+              <div
+                id={link.id}
+                key={index}
+                className="self-center text-center cursor-pointer hover:text-teal-400"
+              >
+                <div className="flex justify-center ">
+                  <a
+                    href={link.link}
+                    className="justify-items-center"
+                    target="blank"
+                  >
+                    {link.icon}
+                  </a>
                 </div>
-              </>
+                <p className="text-xs">{link.subtitle}</p>
+              </div>
             );
           })}
           <>
