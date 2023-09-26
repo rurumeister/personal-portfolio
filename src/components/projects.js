@@ -68,7 +68,7 @@ const projectWeb = [
     title: "Stretch Academy project",
     author: "personal project",
     description:
-      "Developed a front-end website to convey comprehensive information to showcase an example company's services with the use of React and ChakraUI serving as a practice for implementing various frontend technologies",
+      "Developed a front-end website to convey comprehensive information showcasing an example company's services with the use of React and ChakraUI serving as a practice for implementing various frontend technologies",
     githubUrl: "https://github.com/elroychua/sas-startup",
     externalUrl: "https://sas-startup.vercel.app/",
     languages: [
