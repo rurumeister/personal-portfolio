@@ -20,11 +20,6 @@ const HomeNavbar = () => {
       </div>
 
       <ul className="flex items-center">
-        {/* <li>
-          <div className="px-4 py-2">
-            <BsFillMoonStarsFill className="cursor-pointer text-2xl text-yellow-300" />
-          </div>
-        </li> */}
         <li>
           <Link href="/resume">
             <button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white">
@@ -55,9 +50,6 @@ const ResumeNavbar = () => {
       </div>
 
       <ul className="flex items-center">
-        {/* <li>
-          <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
-        </li> ml-8*/}
         <li>
           <Link href="/">
             <button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white">

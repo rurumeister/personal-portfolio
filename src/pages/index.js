@@ -25,7 +25,6 @@ export default function Home() {
         <section className="p-10 md:px-20 lg:px-40 max-w-7xl self-center">
           <Hero />
           <AboutMe />
-          {/* <Skills /> */}
           <WorkExperience />
           <Projects />
           <ContactMe />
