@@ -16,8 +16,8 @@ import {
   SiOpensearch,
 } from "react-icons/si";
 import { MdOpenInNew } from "react-icons/md";
-//
 import Link from "next/link";
+
 const projectWeb = [
   {
     imageUrl: "/img/project_bg/stealth.png",
@@ -97,7 +97,7 @@ const Projects = () => {
   return (
     <>
       <div className=" mt-10">
-        <div className="group font-mono text-3xl font-bold text-white py-1 mt-8">
+        <div className="group font-mono text-3xl font-bold text-black dark:text-white py-1 mt-8">
           <span
             className="bg-left-bottom bg-gradient-to-r from-pink-500 to-pink-500 bg-[length:0%_2px]
           bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
@@ -164,7 +164,7 @@ const Projects = () => {
                     </p>
                   </div>
 
-                  <div className="flex items-center text-slate-50 gap-5">
+                  <div className="flex items-center text-slate-800 dark:text-slate-50 gap-5">
                     {project?.languages.map((Language, index) => {
                       const { component: LanguageIcon, title } = Language;
 

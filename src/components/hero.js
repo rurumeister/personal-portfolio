@@ -1,33 +1,86 @@
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import useMediaQuery from "@mui/material/useMediaQuery";
-const Hero = () => {
+import { white } from "../styles/colors";
+
+const Hero = (props) => {
+  const { darkMode } = props;
+
   const isInitialRequestGreaterThan700 = useMediaQuery("(min-width:700px)");
   return (
     <section>
       <div className="text-center">
-        <h2 className="font-bold  text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 pb-5 text-5xl md:text-8xl">
+        <h2 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 pb-5 text-5xl md:text-8xl">
           Hi, I am Elroy Chua
         </h2>
         <div style={{ minHeight: "75px" }}>
-          {isInitialRequestGreaterThan700 ? (
+          {darkMode ? (
+            isInitialRequestGreaterThan700 ? (
+              <Typewriter
+                style={{ minHeight: "75px" }}
+                options={{ loop: true, cursor: "🚀" }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString(
+                      '<span style="color: white; font-size:3em; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                    )
+                    .pauseFor(500)
+                    .deleteChars(31)
+                    .typeString(
+                      '<span style="color: white; font-size:3em; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                    )
+                    .pauseFor(500)
+                    .deleteChars(19)
+                    .typeString(
+                      '<span style="color: white; font-size:3em; font-family: system-ui;"><strong>UX Designer</strong>.</span>'
+                    )
+                    .pauseFor(500)
+                    .deleteChars(15)
+                    .start();
+                }}
+              />
+            ) : (
+              <Typewriter
+                options={{ loop: true, cursor: "🚀" }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString(
+                      '<span style="color: white; font-size: 1.5em ; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                    )
+                    .pauseFor(500)
+                    .deleteChars(31)
+                    .typeString(
+                      '<span style="color: white; font-size: 1.5em ; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                    )
+                    .pauseFor(500)
+                    .deleteChars(19)
+                    .typeString(
+                      '<span style="color: white; font-size: 1.5em ; font-family: system-ui;"><strong>Designer</strong>.</span>'
+                    )
+                    .pauseFor(500)
+                    .deleteChars(12)
+                    .start();
+                }}
+              />
+            )
+          ) : isInitialRequestGreaterThan700 ? (
             <Typewriter
               style={{ minHeight: "75px" }}
               options={{ loop: true, cursor: "🚀" }}
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    '<span style="color: #FFF; font-size:3em; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                    '<span style="color: black; font-size:3em; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
                   )
                   .pauseFor(500)
                   .deleteChars(31)
                   .typeString(
-                    '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                    '<span style="color: black; font-size:3em; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
                   )
                   .pauseFor(500)
                   .deleteChars(19)
                   .typeString(
-                    '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>UX Designer</strong>.</span>'
+                    '<span style="color: black; font-size:3em; font-family: system-ui;"><strong>UX Designer</strong>.</span>'
                   )
                   .pauseFor(500)
                   .deleteChars(15)
@@ -40,17 +93,17 @@ const Hero = () => {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    '<span style="color: #FFF; font-size: 1.5em ; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                    '<span style="color: black; font-size: 1.5em ; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
                   )
                   .pauseFor(500)
                   .deleteChars(31)
                   .typeString(
-                    '<span style="color: #FFF; font-size: 1.5em ; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                    '<span style="color: black; font-size: 1.5em ; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
                   )
                   .pauseFor(500)
                   .deleteChars(19)
                   .typeString(
-                    '<span style="color: #FFF; font-size: 1.5em ; font-family: system-ui;"><strong>Designer</strong>.</span>'
+                    '<span style="color: black; font-size: 1.5em ; font-family: system-ui;"><strong>Designer</strong>.</span>'
                   )
                   .pauseFor(500)
                   .deleteChars(12)
@@ -59,7 +112,7 @@ const Hero = () => {
             />
           )}
         </div>
-        <p className="text-sm md:text-md text-left py-4 leading-8 text-white">
+        <p className="text-sm md:text-md text-left py-4 leading-8 text-slate-700 dark:text-white">
           {`I'm passionate about user experience and software development, eager to leverage new technologies for positive change and problem-solving. With over a year of hands-on experience in `}
           <span className="font-bold">
             PostgreSQL, Express.js, React & Node.js

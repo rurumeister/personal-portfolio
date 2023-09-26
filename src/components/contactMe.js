@@ -44,7 +44,7 @@ const Form = () => {
   return (
     <section>
       <div
-        className="group font-mono text-3xl font-bold text-white py-1 mt-8"
+        className="group font-mono text-3xl font-bold text-black dark:text-white py-1 mt-8"
         id="social-links"
       >
         <span className="bg-left-bottom bg-gradient-to-r from-emerald-400 to-emerald-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
@@ -53,11 +53,11 @@ const Form = () => {
       </div>
 
       <div className=" relative">
-        <p className="text-sm md:text-md py-2 leading-8 text-white text-left ">
+        <p className="text-sm md:text-md py-2 leading-8 text-slate-700 dark:text-white text-left ">
           {`I am constantly seeking new prospects and ways to broaden my professional connections.
           Don't hesitate to reach out to me through any of these channels!`}
         </p>
-        <div className="text-5xl flex justify-center gap-5 sm:gap-16 lg:gap-44 py-5 md:py-10 flex-col sm:flex-row text-gray-400">
+        <div className="text-5xl flex justify-center gap-5 sm:gap-16 lg:gap-44 py-5 md:py-10 flex-col sm:flex-row text-slate-700 dark:text-gray-400">
           {contactLinks.map((link, index) => {
             return (
               <div

@@ -49,12 +49,12 @@ const AboutMe = () => {
   return (
     <section>
       <div className="mt-16">
-        <div className="group font-mono text-3xl font-bold text-white py-1 mt-8">
+        <div className="group font-mono text-3xl font-bold text-black dark:text-white py-1 mt-8">
           <span className="bg-left-bottom bg-gradient-to-r from-blue-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
             About Me
           </span>
         </div>
-        <p className="text-sm md:text-md  py-2 leading-8 text-white">
+        <p className="text-sm md:text-md  py-2 leading-8 text-slate-700 dark:text-white">
           {`My background in Spatial Design at `}
           <span className="font-bold ">Nanyang Polytechnic</span>
           {` introduced me to design thinking, architectural technologies, and UX concepts. During National Service,
@@ -77,9 +77,9 @@ const AboutMe = () => {
           the Philippines 🇵🇭, playing guitar 🎸 with over 6 years of live playing experience, acting in commercials 🎬, and traveling.`}
         </p>
       </div>
-      <div className="font-mono text-md md:text-xl pt-5 leading-8 text-gray-200">
+      <div className="font-mono text-md md:text-xl pt-5 leading-8 text-slate-700 dark:text-gray-200">
         Programming Languages:{" "}
-        <span className="font-light text-md text-white md:text-xl">
+        <span className="font-light text-md md:text-xl">
           <span className="font-bold">JavaScript</span>,{" "}
           <span className="font-bold">TypeScript</span>, Java, Python & GraphQL.
         </span>
@@ -89,7 +89,7 @@ const AboutMe = () => {
           return (
             <div
               key={index}
-              className="text-center bg-slate-300 bg-opacity-40 shadow-md p-5 md:p-10 rounded-xl my-5 md:my-10"
+              className="text-center bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 bg-opacity-40 shadow-md p-5 md:p-10 rounded-xl my-5 md:my-10"
             >
               <Image
                 alt="design-image"
@@ -98,10 +98,10 @@ const AboutMe = () => {
                 width="100"
                 height="100"
               />
-              <h3 className="text-xl text-white font-semibold pt-8 ">
+              <h3 className="text-xl text-slate-700 dark:text-white font-semibold pt-8 ">
                 {skill.title}
               </h3>
-              <p className="text-sm md:text-md py-2 text-white">
+              <p className="text-sm md:text-md py-2 text-slate-900 dark:text-white">
                 {skill.description}
               </p>
               <div className="flex flex-col flex-wrap justify-center">
@@ -112,7 +112,7 @@ const AboutMe = () => {
                   {skill.stack.map((stackItem, stackIndex) => (
                     <span
                       key={stackIndex}
-                      className="cursor-pointer hover:scale-105 bg-teal-200 text-teal-800 py-1 px-3 m-1 rounded-full text-sm"
+                      className="cursor-pointer hover:scale-105 bg-gray-200 text-gray-800 dark:bg-teal-200 dark:text-teal-800 py-1 px-3 m-1 rounded-full text-sm"
                     >
                       {stackItem}
                     </span>

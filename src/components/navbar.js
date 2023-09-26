@@ -3,16 +3,18 @@ import { React, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineHome } from "react-icons/ai";
 import { CgNotes } from "react-icons/cg";
-
+const navClassName =
+  "sticky py-4 px-10 md:px-20 lg:px-40 flex justify-between top-0 dark:bg-slate-950 dark:bg-opacity-80 bg-white dark:backdrop-blur-sm shadow-md z-50 cursor-pointer";
+const navText = "text-2xl font-mono text-black dark:text-white";
 const HomeNavbar = () => {
   return (
-    <nav className="sticky py-4 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-slate-950 bg-opacity-80 backdrop-blur-sm shadow-md z-50 cursor-pointer">
+    <nav className={navClassName}>
       <div
         className="flex justify-items-center"
         style={{ alignItems: "center" }}
       >
         <Link href="/">
-          <h1 className="text-2xl font-mono text-white">
+          <h1 className={navText}>
             {`//elroychua`}
             <span className="text-teal-600 hover:text-amber-300">_</span>
           </h1>
@@ -36,13 +38,13 @@ const HomeNavbar = () => {
 };
 const ResumeNavbar = () => {
   return (
-    <nav className="sticky py-4 px-10 md:px-20 lg:px-40 flex justify-between top-0 bg-slate-950 bg-opacity-80 backdrop-blur-sm shadow-md z-50 cursor-pointer">
+    <nav className={navClassName}>
       <div
         className="flex justify-items-center"
         style={{ alignItems: "center" }}
       >
         <Link href="/">
-          <h1 className="text-2xl font-mono text-white">
+          <h1 className={navText}>
             {`//elroychua`}
             <span className="text-teal-600 hover:text-amber-300">_</span>
           </h1>
