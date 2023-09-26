@@ -13,11 +13,24 @@ import React, { useEffect, useState } from "react";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    setIsDarkMode(mediaQuery.matches);
-  }, []);
 
+    const handleColorSchemeChange = (e) => {
+      setIsDarkMode(e.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleColorSchemeChange);
+
+    // Initialize the state with the current color scheme
+    setIsDarkMode(mediaQuery.matches);
+
+    return () => {
+      // Clean up the event listener when the component unmounts
+      mediaQuery.removeEventListener("change", handleColorSchemeChange);
+    };
+  }, []);
   return (
     <div className="bg-white dark:bg-slate-900">
       <Head>

@@ -19,12 +19,15 @@ const ScrollToTop = () => {
   };
   return (
     <button
-      className="btn-scrollTop"
+      className="btn-scrollTop text-black dark:text-black"
       style={{ display: isVisible ? "flex" : "none" }}
       onClick={goTop}
     >
-      <FaAngleUp style={{ alignSelf: "center" }} />
-      <p className="text-xs">Go to top.</p>
+      <FaAngleUp
+        style={{ alignSelf: "center" }}
+        className="text-black dark:text-gray-400"
+      />
+      <p className="text-xs text-black dark:text-gray-400">Go to top.</p>
     </button>
   );
 };
