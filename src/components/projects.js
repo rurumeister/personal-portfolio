@@ -37,6 +37,7 @@ const projectWeb = [
     imageUrl: "/img/project_bg/goldenrizz.png",
     title: "Movie booking system",
     author: "under Software Methodologies Module",
+    moduleLink: "https://courses.uow.edu.au/subjects/2023/CSIT314?year=2023",
     description:
       "Full Stack developer in a team of 6 tasked to design and develop a cinema booking app using the MERN. Utilized Jira and GitHub Actions for project management and followed agile methodologies and achieved a final grade of 90%",
     githubUrl: "https://github.com/EternalDoritos/cinema-booking-system",
@@ -66,7 +67,7 @@ const projectWeb = [
   {
     imageUrl: "/img/project_bg/sas-startup.png",
     title: "Stretch Academy project",
-    author: "personal project",
+    author: "side-project",
     description:
       "Developed a front-end website to convey comprehensive information showcasing an example company's services with the use of React and ChakraUI serving as a practice for implementing various frontend technologies",
     githubUrl: "https://github.com/elroychua/sas-startup",
@@ -96,7 +97,8 @@ const projectWeb = [
   {
     imageUrl: "/img/project_bg/csit.png",
     title: "Room booking app",
-    author: "under Project Management Module",
+    author: "under Project Mangement Module",
+    moduleLink: "https://courses.uow.edu.au/subjects/2021/CSIT214?year=2021",
     description:
       "Developed an iOS native app to book rooms. Designed overall application layout, developed, and implemented the entire application, organized meetings and delegating tasks, leading to a final grade of 90%",
     githubUrl: "https://github.com/EternalDoritos/RoomBookingApplication",
@@ -120,7 +122,7 @@ const Projects = () => {
           </span>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex flex-col justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row gap-4 mt-5">
           {projectWeb.map((project, index) => {
             return (
@@ -170,9 +172,21 @@ const Projects = () => {
                     <h4 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       {project?.title}
                     </h4>
-                    <p className="mb-3 text-xs md:text-sm font-normal text-gray-700 dark:text-gray-400">
-                      {project?.author}
-                    </p>
+                    {project?.moduleLink ? (
+                      <a href={project?.moduleLink} target="blank">
+                        <p className="flex mb-3 text-xs md:text-sm font-normal text-gray-700 dark:text-gray-400 underline hover:text-blue-400">
+                          {project?.author}
+                          <MdOpenInNew
+                            size={12}
+                            style={{ alignSelf: "center", marginLeft: "2px" }}
+                          />
+                        </p>
+                      </a>
+                    ) : (
+                      <p className="mb-3 text-xs md:text-sm font-normal text-gray-700 dark:text-gray-400">
+                        {project?.author}
+                      </p>
+                    )}
                     <p className="mb-3 text-sm md:text-md font-normal text-gray-700 dark:text-gray-400">
                       {project?.description}
                     </p>
@@ -181,7 +195,6 @@ const Projects = () => {
                   <div className="flex items-center text-slate-800 dark:text-slate-50 gap-5">
                     {project?.languages.map((Language, index) => {
                       const { component: LanguageIcon, title } = Language;
-
                       return (
                         <div key={index} className="relative">
                           <div className="group">
@@ -201,6 +214,13 @@ const Projects = () => {
             );
           })}
         </div>
+        {/* <div className="self-center mt-4">
+          <Link href="/projects">
+            <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+              View More
+            </button>
+          </Link>
+        </div> */}
       </div>
     </>
   );
