@@ -106,31 +106,31 @@ const Projects = () => {
           </span>
         </div>
       </div>
-      <div class="flex justify-center">
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row gap-4 mt-5">
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row gap-4 mt-5">
           {projectWeb.map((project, index) => {
             return (
               <div
                 key={index}
-                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
               >
-                <div class="relative group">
+                <div className="relative group">
                   <Image
-                    class="rounded-t-lg group-hover:opacity-25"
+                    className="rounded-t-lg group-hover:opacity-25"
                     src={project?.imageUrl}
                     alt={project?.title}
                     width={600}
                     height={400}
                   />
 
-                  <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {project?.githubUrl || project?.externalUrl ? (
-                      <div class="flex text-white px-4 py-2 gap-5 rounded transform scale-0 group-hover:scale-100 transition-transform duration-300">
+                      <div className="flex text-white px-4 py-2 gap-5 rounded transform scale-0 group-hover:scale-100 transition-transform duration-300">
                         {project?.githubUrl && (
                           <a
                             href={project?.githubUrl}
                             target="blank"
-                            class="hover:text-teal-300"
+                            className="hover:text-teal-300"
                           >
                             <AiFillGithub size={35} />
                           </a>
@@ -151,30 +151,30 @@ const Projects = () => {
                     )}
                   </div>
                 </div>
-                <div class="p-5 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div>
-                    <h4 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h4 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       {project?.title}
                     </h4>
-                    <p class="mb-3 text-xs md:text-sm font-normal text-gray-700 dark:text-gray-400">
+                    <p className="mb-3 text-xs md:text-sm font-normal text-gray-700 dark:text-gray-400">
                       {project?.author}
                     </p>
-                    <p class="mb-3 text-sm md:text-md font-normal text-gray-700 dark:text-gray-400">
+                    <p className="mb-3 text-sm md:text-md font-normal text-gray-700 dark:text-gray-400">
                       {project?.description}
                     </p>
                   </div>
 
-                  <div class="flex items-center text-slate-50 gap-5">
+                  <div className="flex items-center text-slate-50 gap-5">
                     {project?.languages.map((Language, index) => {
                       const { component: LanguageIcon, title } = Language;
 
                       return (
-                        <div key={index} class="relative">
-                          <div class="group">
-                            <div class="relative transition-transform ease-in-out duration-300 transform group-hover:-translate-y-2 group-hover:text-teal-300">
+                        <div key={index} className="relative">
+                          <div className="group">
+                            <div className="relative transition-transform ease-in-out duration-300 transform group-hover:-translate-y-2 group-hover:text-teal-300">
                               <LanguageIcon size={18} />
                             </div>
-                            <p class="opacity-0 group-hover:opacity-100 group-hover:text-teal-300 absolute text-xs -bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity ease-in-out duration-300">
+                            <p className="opacity-0 group-hover:opacity-100 group-hover:text-teal-300 absolute text-xs -bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity ease-in-out duration-300">
                               {title}
                             </p>
                           </div>

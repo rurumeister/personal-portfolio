@@ -68,9 +68,9 @@ const Project = () => {
         <div className="group font-mono text-2xl font-bold text-white py-1 mt-4 mb-2">
           Walkthrough Video
         </div>
-        <div class="container">
+        <div className="container">
           <iframe
-            class="responsive-main-iframe"
+            className="responsive-main-iframe"
             src="https://drive.google.com/file/d/1PrOYrg5yae2OcmXIFxpajWa9TXHqv19J/preview"
           ></iframe>
         </div>
@@ -94,7 +94,7 @@ const Project = () => {
           </div>
           <div className=" flex justify-center">
             <iframe
-              class="responsive-sub-iframe"
+              className="responsive-sub-iframe"
               src="https://drive.google.com/file/d/1wTidnoCTbYZ3oPmcJ8qihJObPhia-Vtw/preview"
               width="440"
               height="247.5"
@@ -106,7 +106,7 @@ const Project = () => {
         <div className="flex flex-col-reverse xl:flex-row mt-0 lg:mt-16">
           <div className="p-4 mr-4 flex justify-center">
             <iframe
-              class="responsive-sub-iframe"
+              className="responsive-sub-iframe"
               src="https://drive.google.com/file/d/1wTidnoCTbYZ3oPmcJ8qihJObPhia-Vtw/preview"
               width="440"
               height="247.5"
