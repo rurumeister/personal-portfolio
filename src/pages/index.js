@@ -1,14 +1,14 @@
 import Head from "next/head";
 import { RiCopyrightFill } from "react-icons/ri";
-import Navbar from "../public/components/navbar";
-import Hero from "../public/components/hero";
-import AboutMe from "../public/components/aboutMe";
+import Navbar from "../components/navbar";
+import Hero from "../components/hero";
+import AboutMe from "../components/aboutMe";
 // import Skills from "../public/components/skills";
-import WorkExperience from "../public/components/workExp";
-import Projects from "../public/components/projects";
-import ScrollToTop from "../public/components/scrollToTop";
-import ContactMe from "../public/components/contactMe";
-import Footer from "../public/components/footer";
+import WorkExperience from "../components/workExp";
+import Projects from "../components/projects";
+import ScrollToTop from "../components/scrollToTop";
+import ContactMe from "../components/contactMe";
+import Footer from "../components/footer";
 import * as React from "react";
 
 export default function Home() {

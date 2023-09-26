@@ -4,9 +4,9 @@ import { Document, Page, pdfjs } from "react-pdf";
 import useMediaQuery from "@mui/material/useMediaQuery";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 //component imports
-import Navbar from "../public/components/navbar";
-import ContactMe from "../public/components/contactMe";
-import Footer from "../public/components/footer";
+import Navbar from "../components/navbar";
+import ContactMe from "../components/contactMe";
+import Footer from "../components/footer";
 
 export default function Resume() {
   const isInitialRequestGreaterThan700 = useMediaQuery("(min-width:700px)");

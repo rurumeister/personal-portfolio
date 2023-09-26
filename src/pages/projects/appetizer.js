@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { AiFillGithub } from "react-icons/ai";
-import Navbar from "../../public/components/navbar";
-import Footer from "../../public/components/footer";
-import ContactMe from "../../public/components/contactMe";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import ContactMe from "../../components/contactMe";
 export default function ProjectPage() {
   return (
     <div className="bg-slate-900">
