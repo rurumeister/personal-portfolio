@@ -24,7 +24,7 @@ const projectWeb = [
     title: "Edutech web app",
     author: "side-project",
     description:
-      "Frontend Engineer in a dynamic team of 6 embarking an exciting stealth project in the education technology space. Building an edutech app to serve students in Singapore.",
+      "Frontend Engineer in a dynamic team of six individuals working on an exciting stealth project within the education technology sector, specifically focused on building an edutech application designed to cater to students in Singapore",
     languages: [
       { component: SiReact, title: "React" },
       { component: SiNextdotjs, title: "Next.js" },
@@ -51,9 +51,9 @@ const projectWeb = [
   {
     imageUrl: "/img/project_bg/ninjavan.png",
     title: "Code Dojo hackathon",
-    author: "organized by Ninja Van",
+    author: "organized by NinjaVan",
     description:
-      "Code Dojo 2023, which took place in February, provided my team and I with an opportunity to support NinjaVan's users conceptualizing a customer-centric solution for Ninja Van during a 24-hour hackathon.",
+      "Code Dojo 2023 provided my team and I with the opportunity to support NinjaVan's users by conceptualizing a customer-centric solution resulting in the development of a web service for NinjaVan's drivers and consignees during a 24-hour hackathon",
     githubUrl: "https://github.com/mcbebu/D2HD",
     languages: [
       { component: SiReact, title: "React" },
@@ -64,11 +64,25 @@ const projectWeb = [
     ],
   },
   {
+    imageUrl: "/img/project_bg/sas-startup.png",
+    title: "Stretch Academy project",
+    author: "personal project",
+    description:
+      "Developed a front-end website to convey comprehensive information to showcase an example company's services with the use of React and ChakraUI serving as a practice for implementing various frontend technologies",
+    githubUrl: "https://github.com/elroychua/sas-startup",
+    externalUrl: "https://sas-startup.vercel.app/",
+    languages: [
+      { component: SiReact, title: "React" },
+      { component: SiChakraui, title: "ChakraUI" },
+      { component: SiNextdotjs, title: "Next.js" },
+    ],
+  },
+  {
     imageUrl: "/img/project_bg/appetizer.png",
     title: "Appetizer hackathon",
     author: "organized by Naver Cloud",
     description:
-      "Developed a web app with 3rd party APIs that aided users in kick starting their startup journey. We managed to achieve 4th place, owing strongly to our well-designed and polished prototype that we built.",
+      "Developed a web app with 3rd party APIs that aided users in kick starting their startup journey. We managed to achieve 4th place, owing strongly to our well-designed and polished prototype that we built",
     githubUrl: "https://github.com/D2HD/getgoing-application",
     externalUrl: "/projects/appetizer",
     languages: [
