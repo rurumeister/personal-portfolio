@@ -41,6 +41,7 @@ const projectWeb = [
     description:
       "Full Stack developer in a team of 6 tasked to design and develop a cinema booking app using the MERN. Utilized Jira and GitHub Actions for project management and followed agile methodologies and achieved a final grade of 90%",
     githubUrl: "https://github.com/EternalDoritos/cinema-booking-system",
+    externalUrl: "https://cinema-booking-system-eternal-doritos.vercel.app/",
     languages: [
       { component: SiReact, title: "React" },
       { component: SiTailwindcss, title: "Tailwind" },
@@ -143,17 +144,18 @@ const Projects = () => {
                     {project?.githubUrl || project?.externalUrl ? (
                       <div className="flex text-white px-4 py-2 gap-5 rounded transform scale-0 group-hover:scale-100 transition-transform duration-300">
                         {project?.githubUrl && (
-                          <a
+                          <Link
                             href={project?.githubUrl}
-                            target="blank"
+                            target="_blank"
                             className="hover:text-teal-300"
                           >
                             <AiFillGithub size={35} />
-                          </a>
+                          </Link>
                         )}
                         {project?.externalUrl && (
                           <Link
                             href={project?.externalUrl}
+                            target="_blank"
                             className="hover:text-teal-300"
                           >
                             <MdOpenInNew size={35} />

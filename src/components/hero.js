@@ -5,8 +5,9 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Hero = (props) => {
   const { darkMode } = props;
-
+  console.log("darkMode: ", darkMode);
   const isInitialRequestGreaterThan700 = useMediaQuery("(min-width:700px)");
+  // useEffect(() => {}, [darkMode]);
   return (
     <section>
       <div className="text-center">
@@ -22,19 +23,19 @@ const Hero = (props) => {
                 onInit={(typewriter) => {
                   typewriter
                     .typeString(
-                      '<span style="color: #FFF; font-size:3em; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                      '<span style="color: #FFF; font-size:3em; font-family: `Roboto, sans-serif;"><strong>CS Student @ UOW</strong>.</span>'
                     )
-                    .pauseFor(500)
-                    .deleteChars(31)
+                    .pauseFor(400)
+                    .deleteChars(17)
                     .typeString(
-                      '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                      '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>Software developer</strong>.</span>'
                     )
-                    .pauseFor(500)
+                    .pauseFor(400)
                     .deleteChars(19)
                     .typeString(
-                      '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>UX Designer</strong>.</span>'
+                      '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>UX designer</strong>.</span>'
                     )
-                    .pauseFor(500)
+                    .pauseFor(400)
                     .deleteChars(15)
                     .start();
                 }}
@@ -45,19 +46,19 @@ const Hero = (props) => {
                 onInit={(typewriter) => {
                   typewriter
                     .typeString(
-                      '<span style="color: #FFF; font-size: 1.5em ; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                      '<span style="color: #FFF; font-size: 1.5em ; font-family: `Roboto, sans-serif;"><strong>CS Student @ UOW</strong>.</span>'
                     )
-                    .pauseFor(500)
-                    .deleteChars(31)
+                    .pauseFor(400)
+                    .deleteChars(17)
                     .typeString(
-                      '<span style="color: #FFF; font-size: 1.5em ; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                      '<span style="color: #FFF; font-size: 1.5em ; font-family: system-ui;"><strong>Software developer</strong>.</span>'
                     )
-                    .pauseFor(500)
+                    .pauseFor(400)
                     .deleteChars(19)
                     .typeString(
                       '<span style="color: #FFF; font-size: 1.5em ; font-family: system-ui;"><strong>Designer</strong>.</span>'
                     )
-                    .pauseFor(500)
+                    .pauseFor(400)
                     .deleteChars(12)
                     .start();
                 }}
@@ -70,19 +71,19 @@ const Hero = (props) => {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    '<span style="color: #000000; font-size:3em; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                    '<span style="color: #000000; font-size:3em; font-family: `Roboto, sans-serif;"><strong>CS Student @ UOW</strong>.</span>'
                   )
-                  .pauseFor(500)
-                  .deleteChars(31)
+                  .pauseFor(400)
+                  .deleteChars(17)
                   .typeString(
-                    '<span style="color: #000000; font-size:3em; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                    '<span style="color: #000000; font-size:3em; font-family: system-ui;"><strong>Software developer</strong>.</span>'
                   )
-                  .pauseFor(500)
+                  .pauseFor(400)
                   .deleteChars(19)
                   .typeString(
                     '<span style="color: #000000; font-size:3em; font-family: system-ui;"><strong>UX Designer</strong>.</span>'
                   )
-                  .pauseFor(500)
+                  .pauseFor(400)
                   .deleteChars(15)
                   .start();
               }}
@@ -93,19 +94,19 @@ const Hero = (props) => {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    '<span style="color: #000000; font-size: 1.5em ; font-family: `Roboto, sans-serif;"><strong>Computer Science Undergraduate</strong>.</span>'
+                    '<span style="color: #000000; font-size: 1.5em ; font-family: `Roboto, sans-serif;"><strong>CS Student @ UOW</strong>.</span>'
                   )
-                  .pauseFor(500)
-                  .deleteChars(31)
+                  .pauseFor(400)
+                  .deleteChars(17)
                   .typeString(
-                    '<span style="color: #000000; font-size: 1.5em ; font-family: system-ui;"><strong>Software Developer</strong>.</span>'
+                    '<span style="color: #000000; font-size: 1.5em ; font-family: system-ui;"><strong>Software developer</strong>.</span>'
                   )
-                  .pauseFor(500)
+                  .pauseFor(400)
                   .deleteChars(19)
                   .typeString(
                     '<span style="color: #000000; font-size: 1.5em ; font-family: system-ui;"><strong>Designer</strong>.</span>'
                   )
-                  .pauseFor(500)
+                  .pauseFor(400)
                   .deleteChars(12)
                   .start();
               }}
