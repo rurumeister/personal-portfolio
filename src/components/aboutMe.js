@@ -1,27 +1,20 @@
 import Image from "next/image";
 const skillsArray = [
   {
-    imageUrl: "/img/design.png",
-    title: "UX Design",
-    description:
-      "Crafting elegant designs to meet your needs through design theory and stakeholder input.",
-    stack: ["Adobe XD", "Miro", "Figma"],
-  },
-  {
     imageUrl: "/img/frontend.png",
-    title: "Front End Development",
+    title: "Frontend Development",
     description:
       "Designing, building, and maintaining responsive websites and web apps.",
     stack: [
       "React",
       "HTML",
       "Next.js",
-      "Node.js",
-      "D3.js",
       "Ky.js",
       "Axios",
-      "Cypress",
+      "React Query",
+      "D3.js",
       "ChakraUI",
+      "MaterialUI",
       "TailwindCSS",
       "CSS",
       "Emotion.js",
@@ -29,19 +22,37 @@ const skillsArray = [
   },
   {
     imageUrl: "/img/backend.png",
-    title: "Back End Development",
+    title: "Backend Development",
     description:
       "Development of RESTful APIs, microservices, and database management.",
     stack: [
       "Express.js",
+      "Node.js",
       "Objection.js",
+      "Knex.js",
+      "Springboot",
+      "Joi",
       "Jest",
       "Supertest",
       "Prisma",
-      "PostgreSQL",
-      "MySQL",
-      "MongoDB",
+    ],
+  },
+  {
+    imageUrl: "/img/design.png",
+    title: "DevOps",
+    description:
+      "Enhancing efficiency and effectiveness of software development and IT operations.",
+    stack: [
+      "React Testing Library",
+      "Cypress",
       "Docker",
+      "Nginx",
+      "CI/CD",
+      "GitHub Actions",
+      "Gitlab Runner",
+      "Vercel",
+      "Semgrep",
+      "AWS",
     ],
   },
 ];
@@ -59,9 +70,9 @@ const AboutMe = () => {
           <span className="font-bold ">Nanyang Polytechnic</span>
           {` introduced me to design thinking, architectural technologies, and UX concepts. During National Service,
           I delved into UX design and web development.
-          I'm now pursuing a Bachelor's in Computer Science, specializing in Big Data at the `}
-          <span className="font-bold">University of Wollongong</span>
-          {`  I engage in hackathons, interest groups, and have interned as a Full-Stack Software Developer at `}
+          I am currently pursuing a Bachelor's in Computer Science, specializing in Big Data at the `}
+          <span className="font-bold">University of Wollongong.</span>
+          {`  I also engage in hackathons, interest groups, and have work experience as a Full Stack Software Developer Intern at `}
           <a href="https://getpaid.asia/" target="_blank">
             <span className="font-bold text-emerald-300 underline underline-offset-4 hover:text-amber-300 cursor-pointer">
               GetPaid
@@ -78,11 +89,21 @@ const AboutMe = () => {
         </p>
       </div>
       <div className="font-mono text-md md:text-xl pt-5 leading-8 text-slate-700 dark:text-gray-200">
-        Programming Languages:{" "}
-        <span className="font-light text-md md:text-xl">
+        <span className="font-bold">1. Programming Languages: </span>
+        <span className="font-light text-md md:text-xl italic">
           <span className="font-bold">JavaScript</span>,{" "}
           <span className="font-bold">TypeScript</span>, Java, Python & GraphQL.
         </span>
+      </div>
+      <div className="font-mono text-md md:text-xl pt-5 leading-8 text-slate-700 dark:text-gray-200">
+        <span className="font-bold">2. Databases: </span>
+        <span className="font-light text-md md:text-xl italic">
+          <span className="font-bold">PostgreSQL</span>,{" "}
+          <span className="font-bold">MongoDB</span>, SQL, PL/SQL, Supabase.
+        </span>
+      </div>
+      <div className="font-mono text-md md:text-xl pt-5 leading-8 text-slate-700 dark:text-gray-200">
+        <span className="font-bold">3. Development:</span>
       </div>
       <div className="grid lg:grid-cols-3 gap-0 md:gap-4">
         {skillsArray.map((skill, index) => {
@@ -98,21 +119,21 @@ const AboutMe = () => {
                 width="100"
                 height="100"
               />
-              <h3 className="text-xl text-slate-700 dark:text-white font-semibold pt-8 ">
+              <h3 className="text-xl text-slate-700 dark:text-white font-semibold pt-8 text-left underline underline-offset-2">
                 {skill.title}
               </h3>
-              <p className="text-sm md:text-md py-2 text-slate-900 dark:text-white">
+              <p className="text-sm md:text-md py-2 text-slate-900 dark:text-white text-left ml-1">
                 {skill.description}
               </p>
-              <div className="flex flex-col flex-wrap justify-center">
-                <h4 className="pt-3 pb-2 font-semibold text-teal-400 underline underline-offset-2 ">
+              <div className="flex flex-col flex-wrap">
+                <h4 className="pt-3 pb-2 font-semibold text-teal-400 text-left ml-1">
                   Tech Stack
                 </h4>
                 <div className="flex flex-wrap">
                   {skill.stack.map((stackItem, stackIndex) => (
                     <span
                       key={stackIndex}
-                      className="cursor-pointer hover:scale-105 bg-gray-200 text-gray-800 dark:bg-teal-200 dark:text-teal-800 py-1 px-3 m-1 rounded-full text-sm"
+                      className="cursor-pointer hover:scale-105 bg-gray-200 text-gray-800 dark:bg-teal-200 dark:text-teal-800 py-1 px-3 m-1 rounded-xl text-sm"
                     >
                       {stackItem}
                     </span>

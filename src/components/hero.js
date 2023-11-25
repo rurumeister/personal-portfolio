@@ -23,17 +23,17 @@ const Hero = (props) => {
                 onInit={(typewriter) => {
                   typewriter
                     .typeString(
-                      '<span style="color: #FFF; font-size:3em; font-family: `Roboto, sans-serif;"><strong>CS Student @ UOW</strong>.</span>'
+                      '<span style="color: #FFF !important; font-size:3em; font-family: `Roboto, sans-serif;"><strong>CS Student @ UOW</strong>.</span>'
                     )
                     .pauseFor(400)
                     .deleteChars(17)
                     .typeString(
-                      '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>Software developer</strong>.</span>'
+                      '<span style="color: #FFF !important; font-size:3em; font-family: system-ui;"><strong>Software developer</strong>.</span>'
                     )
                     .pauseFor(400)
                     .deleteChars(19)
                     .typeString(
-                      '<span style="color: #FFF; font-size:3em; font-family: system-ui;"><strong>UX designer</strong>.</span>'
+                      '<span style="color: #FFF !important; font-size:3em; font-family: system-ui;"><strong>UX designer</strong>.</span>'
                     )
                     .pauseFor(400)
                     .deleteChars(15)
@@ -46,17 +46,17 @@ const Hero = (props) => {
                 onInit={(typewriter) => {
                   typewriter
                     .typeString(
-                      '<span style="color: #FFF; font-size: 1.5em ; font-family: `Roboto, sans-serif;"><strong>CS Student @ UOW</strong>.</span>'
+                      '<span style="color: #FFF !important; font-size: 1.5em ; font-family: `Roboto, sans-serif;"><strong>CS Student @ UOW</strong>.</span>'
                     )
                     .pauseFor(400)
                     .deleteChars(17)
                     .typeString(
-                      '<span style="color: #FFF; font-size: 1.5em ; font-family: system-ui;"><strong>Software developer</strong>.</span>'
+                      '<span style="color: #FFF !important; font-size: 1.5em ; font-family: system-ui;"><strong>Software developer</strong>.</span>'
                     )
                     .pauseFor(400)
                     .deleteChars(19)
                     .typeString(
-                      '<span style="color: #FFF; font-size: 1.5em ; font-family: system-ui;"><strong>Designer</strong>.</span>'
+                      '<span style="color: #FFF !important; font-size: 1.5em ; font-family: system-ui;"><strong>Designer</strong>.</span>'
                     )
                     .pauseFor(400)
                     .deleteChars(12)
