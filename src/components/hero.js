@@ -16,6 +16,7 @@ const Hero = (props) => {
         flexDirection: "column",
         justifyContent: "space-between",
       }}
+      className="min-h-[680px] md:min-h-full"
     >
       <div className="text-center">
         <h2 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 pb-5 text-5xl md:text-8xl">
@@ -139,7 +140,7 @@ const Hero = (props) => {
           />
         </div>
       </div>
-      <ul className="flex items-center justify-center">
+      <ul className="flex items-center justify-center mt-2">
         <li>
           <button
             className="text-gray-900 bg-white border border-gray-300 underline focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"

@@ -88,18 +88,23 @@ const AboutMe = () => {
           the Philippines 🇵🇭, playing guitar 🎸 with over 6 years of live playing experience, acting in commercials 🎬, and traveling.`}
         </p>
       </div>
+      <div className="group font-mono text-2xl font-bold text-black dark:text-white py-1 mt-8">
+        <span className="bg-left-bottom bg-gradient-to-r from-blue-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          My Skills
+        </span>
+      </div>
       <div className="font-mono text-md md:text-xl pt-5 leading-8 text-slate-700 dark:text-gray-200">
         <span className="font-bold">1. Programming Languages: </span>
         <span className="font-light text-md md:text-xl italic">
           <span className="font-bold">JavaScript</span>,{" "}
-          <span className="font-bold">TypeScript</span>, Java, Python & GraphQL.
+          <span className="font-bold">TypeScript</span>, Java, & Python.
         </span>
       </div>
       <div className="font-mono text-md md:text-xl pt-5 leading-8 text-slate-700 dark:text-gray-200">
         <span className="font-bold">2. Databases: </span>
         <span className="font-light text-md md:text-xl italic">
           <span className="font-bold">PostgreSQL</span>,{" "}
-          <span className="font-bold">MongoDB</span>, SQL, PL/SQL, Supabase.
+          <span className="font-bold">MongoDB</span>, SQL, PL/SQL & Supabase.
         </span>
       </div>
       <div className="font-mono text-md md:text-xl pt-5 leading-8 text-slate-700 dark:text-gray-200">
