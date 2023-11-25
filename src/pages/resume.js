@@ -7,8 +7,20 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 import Navbar from "../components/navbar";
 import ContactMe from "../components/contactMe";
 import Footer from "../components/footer";
+import { BsFileX } from "react-icons/bs";
 
 export default function Resume() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+  const canvasWrapperStyle = {
+    backgroundColor: "#f0f0f0",
+    border: "1px solid black",
+    borderRadius: "5px",
+    padding: "10px",
+  };
   const isInitialRequestGreaterThan700 = useMediaQuery("(min-width:700px)");
   return (
     <div className="bg-white dark:bg-black">
@@ -20,46 +32,43 @@ export default function Resume() {
       </Head>
       <Navbar activePage="resume" />
       <main className="flex flex-col ">
-        {isInitialRequestGreaterThan700 ? (
-          <section
-            className="flex flex-col justify-around pt-10 px-10 md:px-20 lg:px-40 max-w-7xl self-center"
-            style={{ height: "calc(100vh - 140px)" }}
+        <section className="pt-10 px-10 md:px-20 lg:px-40 max-w-7xl self-center">
+          <div
+            style={{ maxWidth: "100%", width: "100%", padding: "10px" }}
+            className="bg-slate-900 rounded-xl shadow-xl"
           >
-            <div
-              style={{ maxWidth: "100%", width: "100%", padding: "10px" }}
-              className="bg-slate-900 rounded-xl shadow-xl"
+            <h2 className="font-mono bg-clip-text text-emerald-400 py-2 text-left  text-2xl md:text-5xl">
+              Resume.
+            </h2>
+            <Document
+              file="ElroyChuaResume.pdf "
+              onLoadSuccess={onDocumentLoadSuccess}
+              canvasWrapperStyle={canvasWrapperStyle}
             >
-              <h2 className="font-mono bg-clip-text text-emerald-400 py-2 text-left  text-2xl md:text-5xl">
-                Resume
-              </h2>
-              <p className="font-mono bg-clip-text text-white py-2 text-left  text-lg md:text-xl">
-                Available as per request. Hit me up on any of my socials below!
-              </p>
-            </div>
-            <div>
-              <ContactMe />
-              <Footer />
-            </div>
-          </section>
-        ) : (
-          <section className="flex flex-col justify-around pt-10 px-10 md:px-20 lg:px-40 max-w-7xl self-center">
-            <div
-              style={{ maxWidth: "100%", width: "100%", padding: "10px" }}
-              className="bg-slate-900 rounded-xl shadow-xl"
-            >
-              <h2 className="font-mono bg-clip-text text-emerald-400 py-2 text-left  text-2xl md:text-5xl">
-                Resume
-              </h2>
-              <p className="font-mono bg-clip-text text-white py-2 text-left  text-lg md:text-xl">
-                Available as per request. Hit me up on any of my socials below!
-              </p>
-            </div>
-            <div>
-              <ContactMe />
-              <Footer />
-            </div>
-          </section>
-        )}
+              {isInitialRequestGreaterThan700 ? (
+                <Page
+                  renderMode="canvas"
+                  pageNumber={pageNumber}
+                  renderAnnotationLayer={false}
+                  renderTextLayer={false}
+                  width="600"
+                />
+              ) : (
+                <Page
+                  pageNumber={pageNumber}
+                  renderAnnotationLayer={false}
+                  renderTextLayer={false}
+                  width="300"
+                />
+              )}
+            </Document>
+            <p className="text-white">
+              Page {pageNumber} of {numPages}
+            </p>
+          </div>
+          <ContactMe />
+          <Footer />
+        </section>
       </main>
     </div>
   );
