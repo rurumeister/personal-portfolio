@@ -9,13 +9,20 @@ const Hero = (props) => {
   const isInitialRequestGreaterThan700 = useMediaQuery("(min-width:700px)");
   // useEffect(() => {}, [darkMode]);
   return (
-    <section>
+    <section
+      style={{
+        height: "80vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}
+    >
       <div className="text-center">
         <h2 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 pb-5 text-5xl md:text-8xl">
-          Hi, I am Elroy Chua
+          Hi, I am Elroy Chua!
         </h2>
-        <div style={{ minHeight: "75px" }}>
-          {darkMode ? (
+        {/* <div style={{ minHeight: "75px" }}> */}
+        {/* {darkMode ? (
             isInitialRequestGreaterThan700 ? (
               <Typewriter
                 style={{ minHeight: "75px" }}
@@ -111,8 +118,8 @@ const Hero = (props) => {
                   .start();
               }}
             />
-          )}
-        </div>
+          )} */}
+        {/* </div> */}
         <p className="text-sm md:text-md text-left py-4 leading-8 text-slate-700 dark:text-white">
           {`I'm passionate about user experience and software development, eager to leverage new technologies for positive change and problem-solving. With over a year of hands-on experience in `}
           <span className="font-bold">
@@ -121,8 +128,8 @@ const Hero = (props) => {
           {` with `} <span className="font-bold">TypeScript</span>
           {`. Let's connect!`}
         </p>
-      </div>
-      <div className="py-5">
+      </div>{" "}
+      <div className="py-3 lg:py-5">
         <div className=" relative bg-gradient-to-r from-purple-400 to-pink-600 mx-auto rounded-full w-60 h-60 md:w-70 md:h-70 overflow-hidden">
           <Image
             src={"/img/elroy_ai.png"}
@@ -132,7 +139,7 @@ const Hero = (props) => {
           />
         </div>
       </div>
-      <ul className="flex items-center justify-center mt-5">
+      <ul className="flex items-center justify-center">
         <li>
           <button
             className="text-gray-900 bg-white border border-gray-300 underline focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
