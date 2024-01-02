@@ -1,47 +1,30 @@
 import Image from "next/image";
+import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
+import { MdOpenInNew } from "react-icons/md";
 import {
   SiChakraui,
-  SiTailwindcss,
-  SiNextdotjs,
   SiExpress,
-  SiSpringboot,
-  SiPostgresql,
-  SiMongodb,
-  SiReact,
-  SiSwift,
   SiFirebase,
   SiGithub,
-  SiMicrosoftazure,
-  SiOpensearch,
-  SiMui,
-  SiStyledcomponents,
   SiHyperledger,
-  SiVercel,
-  SiSelenium,
+  SiMicrosoftazure,
+  SiMongodb,
+  SiMui,
+  SiNextdotjs,
+  SiOpensearch,
+  SiPostgresql,
   SiPython,
+  SiReact,
+  SiSelenium,
+  SiSpringboot,
+  SiStyledcomponents,
+  SiSwift,
+  SiTailwindcss,
+  SiVercel,
 } from "react-icons/si";
-import { MdOpenInNew } from "react-icons/md";
-import Link from "next/link";
 
 const projectWeb = [
-  {
-    imageUrl: "/img/project_bg/voting.png",
-    title: "QuantumSecureVote",
-    author: "under Capstone Project Module",
-    moduleLink: "https://courses.uow.edu.au/subjects/2023/CSIT321?year=2023",
-    description: `Designing an e-voting system in a team of five using post-quantum RingCT technology
-     for our final year project, positively influencing wider blockchain ecosystems by improving
-     security and sustainability with Hyperledger Fabric and MatriCT+`,
-    date: "Oct 2023 - Present",
-    languages: [
-      { component: SiReact, title: "React" },
-      { component: SiNextdotjs, title: "Next.js" },
-      { component: SiMui, title: "MaterialUI" },
-      { component: SiHyperledger, title: "Hyperledger" },
-      { component: SiGithub, title: "GitHub" },
-    ],
-  },
   {
     imageUrl: "/img/project_bg/stealth.png",
     title: "Edutech web app",
@@ -60,6 +43,24 @@ const projectWeb = [
       { component: SiGithub, title: "GitHub" },
     ],
   },
+  {
+    imageUrl: "/img/project_bg/voting.png",
+    title: "SentinelVote",
+    author: "under Capstone Project Module",
+    moduleLink: "https://courses.uow.edu.au/subjects/2023/CSIT321?year=2023",
+    description: `Building an e-voting platform in a team of five using Linkable Ring Signatures
+     for our final year project, positively influencing wider blockchain ecosystems by improving
+     security and sustainability with Hyperledger Fabric`,
+    date: "Oct 2023 - Feb 2024",
+    languages: [
+      { component: SiReact, title: "React" },
+      { component: SiNextdotjs, title: "Next.js" },
+      { component: SiMui, title: "MaterialUI" },
+      { component: SiHyperledger, title: "Hyperledger" },
+      { component: SiGithub, title: "GitHub" },
+    ],
+  },
+
   {
     imageUrl: "/img/project_bg/goldenrizz.png",
     title: "Cinema booking app",
@@ -226,7 +227,7 @@ const Projects = () => {
                       {project?.title}
                     </h4>
                     {project?.moduleLink ? (
-                      <a href={project?.moduleLink} target="blank">
+                      <a href={project?.moduleLink} target="_blank">
                         <p className="flex mb-1 text-xs md:text-sm font-normal text-blue-500 underline hover:text-blue-600 italic">
                           {project?.author}
                           <MdOpenInNew
