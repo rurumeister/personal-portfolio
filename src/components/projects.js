@@ -99,23 +99,23 @@ const projectWeb = [
       { component: SiGithub, title: "GitHub" },
     ],
   },
-  {
-    imageUrl: "/img/project_bg/sas-startup.png",
-    title: "Stretch Academy project",
-    author: "side-project",
-    description:
-      "Developed a front-end website to convey comprehensive information showcasing an example company's services with the use of React and ChakraUI serving as a practice for implementing various frontend technologies",
-    githubUrl: "https://github.com/elroychua/sas-startup",
-    externalUrl: "https://sas-startup.vercel.app/",
-    date: "Sep 2022",
-    languages: [
-      { component: SiReact, title: "React" },
-      { component: SiChakraui, title: "ChakraUI" },
-      { component: SiNextdotjs, title: "Next.js" },
-      { component: SiVercel, title: "Vercel" },
-      { component: SiGithub, title: "GitHub" },
-    ],
-  },
+  // {
+  //   imageUrl: "/img/project_bg/sas-startup.png",
+  //   title: "Stretch Academy project",
+  //   author: "side-project",
+  //   description:
+  //     "Developed a front-end website to convey comprehensive information showcasing an example company's services with the use of React and ChakraUI serving as a practice for implementing various frontend technologies",
+  //   githubUrl: "https://github.com/elroychua/sas-startup",
+  //   externalUrl: "https://sas-startup.vercel.app/",
+  //   date: "Sep 2022",
+  //   languages: [
+  //     { component: SiReact, title: "React" },
+  //     { component: SiChakraui, title: "ChakraUI" },
+  //     { component: SiNextdotjs, title: "Next.js" },
+  //     { component: SiVercel, title: "Vercel" },
+  //     { component: SiGithub, title: "GitHub" },
+  //   ],
+  // },
   {
     imageUrl: "/img/project_bg/medtech.png",
     title: "MedTech Project Flux",

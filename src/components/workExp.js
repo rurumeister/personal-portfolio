@@ -6,13 +6,13 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import {
+  bgDark,
+  black,
+  green,
+  lightgrey,
   offWhite,
   white,
   yellow,
-  bgDark,
-  green,
-  black,
-  lightgrey,
 } from "../styles/colors";
 let workTimelineElements = [
   {
@@ -196,7 +196,7 @@ const WorkExperience = (props) => {
           Education
         </span>
       </div>
-      <div className="">
+      <div class="hi">
         {darkMode ? (
           <VerticalTimeline lineColor={offWhite}>
             {educationTimelineElements.map((element) => {
