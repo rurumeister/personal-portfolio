@@ -61,7 +61,9 @@ let educationTimelineElements = [
     id: 1,
     title: "Bachelor of Science, Computer Science (Big Data)",
     location: "University of Wollongong - SIM GE",
-    description: "GPA 3.25/4 ",
+    description: "Grade: Distinction ",
+    topics:
+      "Programming Fundamentals, Problem Solving, System Analysis, Data Management and Security, Object Oriented Design and Programming, IT Project Management, Algorithms and Data Structures, Advanced Programming, Database Systems, Database and Performance Tuning, Big Data Mining Techniques and Implementation & Big Data Management",
     addedDescription:
       " Data Analytics Club (Analyst) & IT Club (Sub-committee)",
     buttonText: "View Degree",
@@ -73,7 +75,8 @@ let educationTimelineElements = [
     title: "Diploma in Spatial Design",
     location: "Nanyang Polytechnic, Singapore",
     description:
-      "Learned design thinking, UX design concepts and architectural technologies, achieved Director’s List in Year 1.",
+      "Director's List for outstanding academic performance - 2018/2019 Semester 1",
+    topics: "Design Thinking, UX Design and Architectural Technologies",
     buttonText: "View Diploma",
     date: "Apr 2016 - Mar 2019",
     icon: "school",
@@ -231,6 +234,14 @@ const WorkExperience = (props) => {
                   >
                     {element.description}
                   </p>
+                  {element?.topics ? (
+                    <p id="vertical-timeline-element-added-description">
+                      <span style={{ fontWeight: "bold" }}>Topics:</span>{" "}
+                      <span style={{ fontStyle: "italic" }}>
+                        {element.topics}
+                      </span>
+                    </p>
+                  ) : null}
                   {element?.addedDescription ? (
                     <p id="vertical-timeline-element-added-description">
                       <span style={{ fontWeight: "bold" }}>
