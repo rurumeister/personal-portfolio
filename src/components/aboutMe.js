@@ -85,7 +85,7 @@ const AboutMe = () => {
             </span>
           </a>
           {`. I find meaning volunteering at a local church, participating in feeding programs for underprivileged children in
-          the Philippines 🇵🇭, playing guitar 🎸 with over 6 years of live playing experience, acting in commercials 🎬, and traveling.`}
+          the Philippines 🇵🇭, playing guitar 🎸 with over 6 years of live playing experience, acting in commercials 🎬, and travelling.`}
         </p>
       </div>
       <div className="group font-mono text-2xl font-bold text-black dark:text-white py-1 mt-8">
