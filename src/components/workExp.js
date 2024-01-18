@@ -19,7 +19,7 @@ let workTimelineElements = [
     id: 1,
     title: "FullStack Developer Software Engineer - Intern",
     location: "Ensign InfoSecurity, Singapore",
-    description: `Full Stack development in the Solutions Engineering Team: Leading a tech stack revamp of an internal CRUD application focused on IP address monitoring.
+    description: `Full Stack development in the Solutions Engineering Team: Currently building another PERN stack application in collaboration with Ensign Labs teams.
     Delivered a data visualization application for monitoring global threat analysis onto on premise server.
     Collaborated with Ensign Labs teams, conducting user research and design iterations based on feedback
     `,
@@ -199,7 +199,7 @@ const WorkExperience = (props) => {
           Education
         </span>
       </div>
-      <div class="hi">
+      <div>
         {darkMode ? (
           <VerticalTimeline lineColor={offWhite}>
             {educationTimelineElements.map((element) => {

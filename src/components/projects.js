@@ -1,22 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
+import { BiLogoGoLang } from "react-icons/bi";
+import { FaAws } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
 import {
   SiChakraui,
   SiExpress,
   SiFirebase,
   SiGithub,
-  SiHyperledger,
   SiMicrosoftazure,
   SiMongodb,
-  SiMui,
   SiNextdotjs,
   SiOpensearch,
   SiPostgresql,
   SiPython,
   SiReact,
   SiSelenium,
+  SiSequelize,
   SiSpringboot,
   SiStyledcomponents,
   SiSwift,
@@ -48,16 +49,17 @@ const projectWeb = [
     title: "SentinelVote",
     author: "under Capstone Project Module",
     moduleLink: "https://courses.uow.edu.au/subjects/2023/CSIT321?year=2023",
-    description: `Building an e-voting platform in a team of five using Linkable Ring Signatures
+    description: `Full Stack developer in a team of five building an e-voting platform using Linkable Ring Signatures
      for our final year project, positively influencing wider blockchain ecosystems by improving
-     security and sustainability with Hyperledger Fabric`,
+     security and sustainability of the voting process`,
     date: "Oct 2023 - Feb 2024",
     languages: [
       { component: SiReact, title: "React" },
       { component: SiNextdotjs, title: "Next.js" },
-      { component: SiMui, title: "MaterialUI" },
-      { component: SiHyperledger, title: "Hyperledger" },
+      { component: BiLogoGoLang, title: "GoLang" },
+      { component: SiSequelize, title: "Sequelize" },
       { component: SiGithub, title: "GitHub" },
+      { component: FaAws, title: "AWS EC3" },
     ],
   },
 
@@ -66,7 +68,7 @@ const projectWeb = [
     title: "Cinema booking app",
     author: "under Software Methodologies Module",
     moduleLink: "https://courses.uow.edu.au/subjects/2023/CSIT314?year=2023",
-    description: `Full Stack developer in a team of 6 tasked to design and develop a cinema booking app using
+    description: `Full Stack developer in a team of six tasked to design and develop a cinema booking app using
       MERN. Utilized Jira and GitHub Actions for project management and followed agile
       methodologies and achieved a final grade of 90%`,
     githubUrl: "https://github.com/EternalDoritos/cinema-booking-system",
