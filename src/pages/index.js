@@ -1,15 +1,15 @@
 import Head from "next/head";
-import { RiCopyrightFill } from "react-icons/ri";
-import Navbar from "../components/navbar";
-import Hero from "../components/hero";
 import AboutMe from "../components/aboutMe";
+import Hero from "../components/hero";
+import Navbar from "../components/navbar";
 // import Skills from "../public/components/skills";
-import WorkExperience from "../components/workExp";
-import Projects from "../components/projects";
-import ScrollToTop from "../components/scrollToTop";
+import React, { useEffect, useState } from "react";
+import Certifications from "../components/certifications";
 import ContactMe from "../components/contactMe";
 import Footer from "../components/footer";
-import React, { useEffect, useState } from "react";
+import Projects from "../components/projects";
+import ScrollToTop from "../components/scrollToTop";
+import WorkExperience from "../components/workExp";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -46,6 +46,7 @@ export default function Home() {
           <AboutMe />
           <WorkExperience darkMode={isDarkMode} />
           <Projects />
+          <Certifications />
           <ContactMe />
           <Footer />
           <ScrollToTop />
