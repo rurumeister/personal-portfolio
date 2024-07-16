@@ -4,7 +4,6 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 // import Skills from "../public/components/skills";
 import React, { useEffect, useState } from "react";
-import Certifications from "../components/certifications";
 import ContactMe from "../components/contactMe";
 import Footer from "../components/footer";
 import Projects from "../components/projects";
@@ -46,7 +45,7 @@ export default function Home() {
           <AboutMe />
           <WorkExperience darkMode={isDarkMode} />
           <Projects />
-          <Certifications />
+          {/* <Certifications /> */}
           <ContactMe />
           <Footer />
           <ScrollToTop />
