@@ -4,12 +4,12 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 // import Skills from "../public/components/skills";
 import React, { useEffect, useState } from "react";
+import Certifications from "../components/certifications";
 import ContactMe from "../components/contactMe";
 import Footer from "../components/footer";
 import Projects from "../components/projects";
 import ScrollToTop from "../components/scrollToTop";
 import WorkExperience from "../components/workExp";
-
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -45,7 +45,7 @@ export default function Home() {
           <AboutMe />
           <WorkExperience darkMode={isDarkMode} />
           <Projects />
-          {/* <Certifications /> */}
+          <Certifications />
           <ContactMe />
           <Footer />
           <ScrollToTop />

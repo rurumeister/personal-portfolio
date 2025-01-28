@@ -27,13 +27,32 @@ import {
 
 const projectWeb = [
   {
+    imageUrl: "/img/project_bg/schemes.png",
+    title: "Schemes SG ",
+    author: "non-profit project under BetterSG",
+    githubUrl: "https://github.com/bettersg/SchemesSG_v3",
+    externalUrl: "https://schemes.sg/",
+    description: `Volunteering as a Software Engineer to improve UI and migrate systems from Schemes
+    V1 to V2, empowering Singapore residents to discover over 300 public assistance schemes. Implemented
+    design improvements to make social support more accessible`,
+    date: "Dec 2024 - Feb 2025",
+    languages: [
+      { component: SiReact, title: "React" },
+      { component: SiNextdotjs, title: "Next.js" },
+      { component: SiMicrosoftazure, title: "Azure APIM" },
+      // { component: SiOpensearch, title: "OpenSearch" },
+      { component: SiVercel, title: "Vercel" },
+      { component: SiGithub, title: "GitHub" },
+    ],
+  },
+  {
     imageUrl: "/img/project_bg/stealth.png",
     title: "Edutech web app",
     author: "side-project",
     description: `Leading the design and implementation of frontend infrastructure in a team of six
     individuals working on a stealth project within the education technology sector, focusing
     on serving digitized exam practice papers to secondary students in Singapore`,
-    date: "Jul 2023 - Present",
+    date: "Jul 2023 - Mar 2024",
     languages: [
       { component: SiReact, title: "React" },
       { component: SiNextdotjs, title: "Next.js" },

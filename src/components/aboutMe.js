@@ -29,7 +29,9 @@ const skillsArray = [
       "Express.js",
       "Node.js",
       "Objection.js",
+      "Nest.js",
       "Knex.js",
+      "TypeOrm",
       "Springboot",
       "Joi",
       "Jest",
@@ -56,6 +58,7 @@ const skillsArray = [
     ],
   },
 ];
+
 const AboutMe = () => {
   return (
     <section>
@@ -70,7 +73,7 @@ const AboutMe = () => {
           <span className="font-bold ">Nanyang Polytechnic</span>
           {` introduced me to design thinking, architectural technologies, and UX concepts. During National Service,
           I delved into UX design and web development.
-          I am currently pursuing a Bachelor's in Computer Science, specializing in Big Data at the `}
+          I recently completed my Bachelor's in Computer Science with Distinction, specializing in Big Data at the `}
           <span className="font-bold">University of Wollongong.</span>
           {`  I also engage in hackathons, interest groups, and have work experience as a Full Stack Software Developer Intern at `}
           <a href="https://getpaid.asia/" target="_blank">
@@ -78,7 +81,7 @@ const AboutMe = () => {
               GetPaid
             </span>
           </a>
-          {` and currently at `}
+          {` and have grown from a Full Stack Software Developer Intern to my current role as Associate Software Engineer at `}
           <a href="https://www.ensigninfosecurity.com/" target="_blank">
             <span className="font-bold text-emerald-300 underline underline-offset-4 hover:text-amber-300 cursor-pointer">
               Ensign InfoSecurity

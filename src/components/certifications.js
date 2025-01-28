@@ -8,7 +8,12 @@ const certificateList = [
       {
         title: "AWS Certified Developer",
         // dateValid: "Apr 2024 - Apr 2027",
-        dateEarned: "Apr 2024 (est)",
+        dateEarned: "Mar 2025 (est)",
+      },
+      {
+        title: "AWS Certified Solutions Architect - Associate",
+        dateValid: "Oct 2024 - Oct 2027",
+        dateEarned: "Oct 2024",
       },
     ],
   },
@@ -31,16 +36,16 @@ const certificateList = [
     title: "Udemy",
     certificate: [
       {
-        title: "Discovering Backend Bottlenecks: Unlocking Peak Performance",
-        dateEarned: "Apr 2024 (est)",
+        title: "React & TypeScript Chrome Extension Development [2024]",
+        dateEarned: "Sep 2024",
       },
       {
-        title: "Fundamentals of Backend Engineering",
-        dateEarned: "Mar 2024 (est)",
+        title: "SQL Optimization with SingleStore",
+        dateEarned: "Apr 2024",
       },
       {
-        title: "Fundamentals of Network Engineering",
-        dateEarned: "Feb 2024 (est)",
+        title: "Software Architecture: REST API Design - The Complete Guide",
+        dateEarned: "Apr 2024",
       },
       {
         title: "Learn OAuth 2.0 - Get started as an API Security Expert",

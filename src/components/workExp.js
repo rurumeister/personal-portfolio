@@ -17,6 +17,17 @@ import {
 let workTimelineElements = [
   {
     id: 1,
+    title: "Associate Software Engineer II",
+    location: "Ensign InfoSecurity, Singapore",
+    description: `Architected and implemented enterprise-scale solutions across email integrations,
+    database migrations, and security platforms, leveraging machine learning, performance optimization,
+    and automated workflows to deliver robust cross-platform applications.`,
+    buttonText: "View Work",
+    date: "Mar 2024 - Present",
+    icon: "work",
+  },
+  {
+    id: 2,
     title: "FullStack Developer Software Engineer - Intern",
     location: "Ensign InfoSecurity, Singapore",
     description: `Full Stack development in the Solutions Engineering Team: Currently building another PERN stack application in collaboration with Ensign Labs teams.
@@ -26,11 +37,11 @@ let workTimelineElements = [
     stack:
       " PostgreSQL, Express.js, Joi, Knex, Ky, Jest, React, TailwindCSS, D3.js, GitLab Pipeline, Nginx, Docker, and AWS",
     buttonText: "View Work",
-    date: "Aug 2023 - Mar 2024",
+    date: "Aug 2023 - Feb 2024",
     icon: "work",
   },
   {
-    id: 2,
+    id: 3,
     title: "FullStack Developer - Intern",
     location: "GetPaid, Singapore",
     description: `Resolved user-reported frontend issues, improving GetPaid's web portal user experience.
@@ -43,7 +54,7 @@ let workTimelineElements = [
     icon: "work",
   },
   {
-    id: 3,
+    id: 4,
     title: "Software Engineer - Intern",
     location: "GetPaid, Singapore",
     description: `Led transition from WordPress to a Vercel-hosted React-based app, saving operational costs.
