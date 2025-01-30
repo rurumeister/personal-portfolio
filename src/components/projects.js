@@ -49,6 +49,7 @@ const projectWeb = [
     imageUrl: "/img/project_bg/stealth.png",
     title: "Edutech web app",
     author: "side-project",
+    externalUrl: "https://www.junebee.app/",
     description: `Leading the design and implementation of frontend infrastructure in a team of six
     individuals working on a stealth project within the education technology sector, focusing
     on serving digitized exam practice papers to secondary students in Singapore`,
@@ -67,6 +68,8 @@ const projectWeb = [
     imageUrl: "/img/project_bg/voting.png",
     title: "SentinelVote",
     author: "under Capstone Project Module",
+    githubUrl: "https://github.com/orgs/SentinelVote/repositories",
+    externalUrl: "https://sentinelvote.github.io/website/",
     moduleLink: "https://courses.uow.edu.au/subjects/2023/CSIT321?year=2023",
     description: `Full Stack developer in a team of five building an e-voting platform using Linkable Ring Signatures
      for our final year project, positively influencing wider blockchain ecosystems by improving
