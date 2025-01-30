@@ -30,7 +30,7 @@ const projectWeb = [
   {
     imageUrl: "/img/project_bg/schemes.png",
     title: "SchemesSG ",
-    author: "passion project under BetterSG",
+    author: "non-profit project under BetterSG",
     githubUrl: "https://github.com/bettersg/SchemesSG_v3",
     externalUrl: "https://schemes.sg/",
     description: `Volunteering as a Software Engineer to improve UI and migrate systems from Schemes
@@ -48,7 +48,7 @@ const projectWeb = [
   },
   {
     imageUrl: "/img/project_bg/saltandpeps.png",
-    title: "Portfolio Website",
+    title: "Peps' portfolio",
     author: "passion-project",
     externalUrl: "https://www.saltandpeps.com/",
     description: `Architected and deployed a photography portfolio platform leveraging Hygraph
