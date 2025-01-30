@@ -9,6 +9,7 @@ import {
   SiExpress,
   SiFirebase,
   SiGithub,
+  SiGraphql,
   SiMicrosoftazure,
   SiMongodb,
   SiNextdotjs,
@@ -28,8 +29,8 @@ import {
 const projectWeb = [
   {
     imageUrl: "/img/project_bg/schemes.png",
-    title: "Schemes SG ",
-    author: "non-profit project under BetterSG",
+    title: "SchemesSG ",
+    author: "passion project under BetterSG",
     githubUrl: "https://github.com/bettersg/SchemesSG_v3",
     externalUrl: "https://schemes.sg/",
     description: `Volunteering as a Software Engineer to improve UI and migrate systems from Schemes
@@ -41,6 +42,24 @@ const projectWeb = [
       { component: SiNextdotjs, title: "Next.js" },
       { component: SiMicrosoftazure, title: "Azure APIM" },
       // { component: SiOpensearch, title: "OpenSearch" },
+      { component: SiVercel, title: "Vercel" },
+      { component: SiGithub, title: "GitHub" },
+    ],
+  },
+  {
+    imageUrl: "/img/project_bg/saltandpeps.png",
+    title: "Portfolio Website",
+    author: "passion-project",
+    externalUrl: "https://www.saltandpeps.com/",
+    description: `Architected and deployed a photography portfolio platform leveraging Hygraph
+    CMS and GraphQL infrastructure, enabling streamlined content management for the professional
+    photographer's growing collection of work`,
+    date: "Jun 2024",
+    languages: [
+      { component: SiReact, title: "React" },
+      { component: SiNextdotjs, title: "Next.js" },
+      { component: SiGraphql, title: "GraphQL" },
+      { component: SiTailwindcss, title: "Tailwind" },
       { component: SiVercel, title: "Vercel" },
       { component: SiGithub, title: "GitHub" },
     ],
