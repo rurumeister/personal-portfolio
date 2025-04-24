@@ -1,5 +1,4 @@
 import { FaLaptopCode as WorkIcon } from "react-icons/fa";
-import { IoSchoolOutline as SchoolIcon } from "react-icons/io5";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,7 +11,6 @@ import {
   lightgrey,
   offWhite,
   white,
-  yellow,
 } from "../styles/colors";
 let workTimelineElements = [
   {
@@ -205,7 +203,7 @@ const WorkExperience = (props) => {
           </VerticalTimeline>
         )}
       </div>
-      <div className="group font-mono text-3xl font-bold text-black dark:text-white py-1 mt-8">
+      {/* <div className="group font-mono text-3xl font-bold text-black dark:text-white py-1 mt-8">
         <span className="bg-left-bottom bg-gradient-to-r from-yellow-400 to-yellow-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
           Education
         </span>
@@ -307,7 +305,7 @@ const WorkExperience = (props) => {
             })}
           </VerticalTimeline>
         )}
-      </div>
+      </div> */}
     </section>
   );
 };

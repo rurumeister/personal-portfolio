@@ -6,9 +6,9 @@ const certificateList = [
     title: "Amazon Web Services (AWS)",
     certificate: [
       {
-        title: "AWS Certified Developer",
-        // dateValid: "Apr 2024 - Apr 2027",
-        dateEarned: "Mar 2025 (est)",
+        title: "AWS Certified Developer - Associate",
+        dateValid: "Apr 2025 - Apr 2028",
+        dateEarned: "Apr 2025",
       },
       {
         title: "AWS Certified Solutions Architect - Associate",
@@ -31,93 +31,93 @@ const certificateList = [
       },
     ],
   },
-  {
-    imageUrl: "/img/certifications/udemy.png",
-    title: "Udemy",
-    certificate: [
-      {
-        title: "React & TypeScript Chrome Extension Development [2024]",
-        dateEarned: "Sep 2024",
-      },
-      {
-        title: "SQL Optimization with SingleStore",
-        dateEarned: "Apr 2024",
-      },
-      {
-        title: "Software Architecture: REST API Design - The Complete Guide",
-        dateEarned: "Apr 2024",
-      },
-      {
-        title: "Learn OAuth 2.0 - Get started as an API Security Expert",
-        dateEarned: "Jan 2024",
-        skillsLearned: ["React"],
-      },
-    ],
-  },
-  {
-    imageUrl: "/img/certifications/gnowbe.png",
-    title: "Gnowbe",
-    certificate: [
-      {
-        title: "Visual Logic in UI Design",
-        dateEarned: "Jul 2022",
-      },
-      {
-        title: "User Centric Interface Design for Mobile Devices",
-        dateEarned: "Aug 2022",
-      },
-    ],
-  },
-  {
-    imageUrl: "/img/certifications/coursera.png",
-    title: "Coursera",
-    certificate: [
-      {
-        title: "Start the UX Design Process: Empathize, Define, and Ideate",
-        dateEarned: "Dec 2021",
-      },
-      {
-        title: "Intro to Computer Programming",
-        dateEarned: "Aug 2021",
-      },
-      {
-        title: "How Computers Work",
-        dateEarned: "Jul 2021",
-      },
-      {
-        title: "Foundations of User Experience (UX) Design",
-        dateEarned: "Jun 2021",
-      },
-    ],
-  },
+  // {
+  //   imageUrl: "/img/certifications/udemy.png",
+  //   title: "Udemy",
+  //   certificate: [
+  //     {
+  //       title: "React & TypeScript Chrome Extension Development [2024]",
+  //       dateEarned: "Sep 2024",
+  //     },
+  //     {
+  //       title: "SQL Optimization with SingleStore",
+  //       dateEarned: "Apr 2024",
+  //     },
+  //     {
+  //       title: "Software Architecture: REST API Design - The Complete Guide",
+  //       dateEarned: "Apr 2024",
+  //     },
+  //     {
+  //       title: "Learn OAuth 2.0 - Get started as an API Security Expert",
+  //       dateEarned: "Jan 2024",
+  //       skillsLearned: ["React"],
+  //     },
+  //   ],
+  // },
+  // {
+  //   imageUrl: "/img/certifications/gnowbe.png",
+  //   title: "Gnowbe",
+  //   certificate: [
+  //     {
+  //       title: "Visual Logic in UI Design",
+  //       dateEarned: "Jul 2022",
+  //     },
+  //     {
+  //       title: "User Centric Interface Design for Mobile Devices",
+  //       dateEarned: "Aug 2022",
+  //     },
+  //   ],
+  // },
+  // {
+  //   imageUrl: "/img/certifications/coursera.png",
+  //   title: "Coursera",
+  //   certificate: [
+  //     {
+  //       title: "Start the UX Design Process: Empathize, Define, and Ideate",
+  //       dateEarned: "Dec 2021",
+  //     },
+  //     {
+  //       title: "Intro to Computer Programming",
+  //       dateEarned: "Aug 2021",
+  //     },
+  //     {
+  //       title: "How Computers Work",
+  //       dateEarned: "Jul 2021",
+  //     },
+  //     {
+  //       title: "Foundations of User Experience (UX) Design",
+  //       dateEarned: "Jun 2021",
+  //     },
+  //   ],
+  // },
 
-  {
-    imageUrl: "/img/certifications/codecademy.png",
-    title: "Codecademy",
-    certificate: [
-      { title: "Learn JavaScript Course", dateEarned: "Mar 2022" },
-      {
-        title: "Design Database with PostgreSQL",
-        dateEarned: "Dec 2021",
-      },
-      {
-        title: "Learn SQL Course",
-        dateEarned: "Nov 2021",
-      },
-      {
-        title: "Learn CSS: Responsive Design Course",
-        dateEarned: "Jun 2021",
-      },
-      {
-        title: "Code Foundations Skill Path",
-        dateEarned: "May 2021",
-      },
-      {
-        title: "Learn HTML Course",
-        dateEarned: "Apr 2021",
-      },
-    ],
-  },
+  // {
+  //   imageUrl: "/img/certifications/codecademy.png",
+  //   title: "Codecademy",
+  //   certificate: [
+  //     { title: "Learn JavaScript Course", dateEarned: "Mar 2022" },
+  //     {
+  //       title: "Design Database with PostgreSQL",
+  //       dateEarned: "Dec 2021",
+  //     },
+  //     {
+  //       title: "Learn SQL Course",
+  //       dateEarned: "Nov 2021",
+  //     },
+  //     {
+  //       title: "Learn CSS: Responsive Design Course",
+  //       dateEarned: "Jun 2021",
+  //     },
+  //     {
+  //       title: "Code Foundations Skill Path",
+  //       dateEarned: "May 2021",
+  //     },
+  //     {
+  //       title: "Learn HTML Course",
+  //       dateEarned: "Apr 2021",
+  //     },
+  //   ],
+  // },
 ];
 
 const Certifications = () => {
@@ -129,7 +129,7 @@ const Certifications = () => {
             className="bg-left-bottom bg-gradient-to-r from-pink-500 to-pink-500 bg-[length:0%_2px]
           bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
           >
-            Certifications & External Courses
+            Certifications
           </span>
         </div>
       </div>

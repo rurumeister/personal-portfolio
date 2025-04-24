@@ -51,9 +51,9 @@ const projectWeb = [
     title: "Peps' portfolio",
     author: "passion-project",
     externalUrl: "https://www.saltandpeps.com/",
-    description: `Architected and deployed a photography portfolio platform leveraging Hygraph
-    CMS and GraphQL infrastructure, enabling streamlined content management for the professional
-    photographer's growing collection of work`,
+    description: `Architected and deployed a responsive photography portfolio website integrating
+    Hygraph CMS with GraphQL, enabling efficient content management and increasing client visibility
+    for my fiancée's professional photography business`,
     date: "Jun 2024",
     languages: [
       { component: SiReact, title: "React" },
